@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C457B212B961CB700311DB9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C457B202B961CB700311DB9 /* LoginViewController.swift */; };
 		9CBA44F22B95CA8C00951D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA44F12B95CA8C00951D93 /* AppDelegate.swift */; };
 		9CBA44F42B95CA8C00951D93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA44F32B95CA8C00951D93 /* SceneDelegate.swift */; };
-		9CBA44F62B95CA8C00951D93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA44F52B95CA8C00951D93 /* ViewController.swift */; };
 		9CBA44F92B95CA8C00951D93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA44F72B95CA8C00951D93 /* Main.storyboard */; };
 		9CBA44FB2B95CA8D00951D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA44FA2B95CA8D00951D93 /* Assets.xcassets */; };
 		9CBA44FE2B95CA8D00951D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA44FC2B95CA8D00951D93 /* LaunchScreen.storyboard */; };
 		9CBA45092B95CA8D00951D93 /* SecondHandMarketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA45082B95CA8D00951D93 /* SecondHandMarketTests.swift */; };
 		9CBA45132B95CA8D00951D93 /* SecondHandMarketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA45122B95CA8D00951D93 /* SecondHandMarketUITests.swift */; };
 		9CBA45152B95CA8D00951D93 /* SecondHandMarketUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA45142B95CA8D00951D93 /* SecondHandMarketUITestsLaunchTests.swift */; };
+		9CBA45272B95ED5900951D93 /* maplestorylight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA45252B95ED5900951D93 /* maplestorylight.ttf */; };
+		9CBA45282B95ED5900951D93 /* maplestorybold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA45262B95ED5900951D93 /* maplestorybold.ttf */; };
+		9CBA452C2B95EEDD00951D93 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA452A2B95EEDD00951D93 /* logo.png */; };
+		9CBA452D2B95EEDD00951D93 /* marker_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA452B2B95EEDD00951D93 /* marker_icon.png */; };
+		9CBA45302B960B0200951D93 /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9CBA452F2B960B0200951D93 /* ReactorKit */; };
+		9CBA45332B960B4900951D93 /* LoginReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA45322B960B4900951D93 /* LoginReactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C457B202B961CB700311DB9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9CBA44EE2B95CA8C00951D93 /* SecondHandMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondHandMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBA44F12B95CA8C00951D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CBA44F32B95CA8C00951D93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9CBA44F52B95CA8C00951D93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9CBA44F82B95CA8C00951D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CBA44FA2B95CA8D00951D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CBA44FD2B95CA8D00951D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,11 @@
 		9CBA450E2B95CA8D00951D93 /* SecondHandMarketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecondHandMarketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBA45122B95CA8D00951D93 /* SecondHandMarketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondHandMarketUITests.swift; sourceTree = "<group>"; };
 		9CBA45142B95CA8D00951D93 /* SecondHandMarketUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondHandMarketUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9CBA45252B95ED5900951D93 /* maplestorylight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = maplestorylight.ttf; sourceTree = "<group>"; };
+		9CBA45262B95ED5900951D93 /* maplestorybold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = maplestorybold.ttf; sourceTree = "<group>"; };
+		9CBA452A2B95EEDD00951D93 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		9CBA452B2B95EEDD00951D93 /* marker_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marker_icon.png; sourceTree = "<group>"; };
+		9CBA45322B960B4900951D93 /* LoginReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginReactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CBA45302B960B0200951D93 /* ReactorKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C457B1F2B961C9400311DB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C457B202B961CB700311DB9 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9CBA44E52B95CA8C00951D93 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +119,12 @@
 		9CBA44F02B95CA8C00951D93 /* SecondHandMarket */ = {
 			isa = PBXGroup;
 			children = (
+				9C457B1F2B961C9400311DB9 /* View */,
+				9CBA45312B960B3200951D93 /* ViewModel */,
+				9CBA44F72B95CA8C00951D93 /* Main.storyboard */,
+				9CBA45232B95ECA700951D93 /* Resources */,
 				9CBA44F12B95CA8C00951D93 /* AppDelegate.swift */,
 				9CBA44F32B95CA8C00951D93 /* SceneDelegate.swift */,
-				9CBA44F52B95CA8C00951D93 /* ViewController.swift */,
-				9CBA44F72B95CA8C00951D93 /* Main.storyboard */,
 				9CBA44FA2B95CA8D00951D93 /* Assets.xcassets */,
 				9CBA44FC2B95CA8D00951D93 /* LaunchScreen.storyboard */,
 				9CBA44FF2B95CA8D00951D93 /* Info.plist */,
@@ -127,6 +149,41 @@
 			path = SecondHandMarketUITests;
 			sourceTree = "<group>";
 		};
+		9CBA45232B95ECA700951D93 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9CBA45292B95EEC400951D93 /* image */,
+				9CBA45242B95ECC800951D93 /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9CBA45242B95ECC800951D93 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				9CBA45262B95ED5900951D93 /* maplestorybold.ttf */,
+				9CBA45252B95ED5900951D93 /* maplestorylight.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		9CBA45292B95EEC400951D93 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				9CBA452A2B95EEDD00951D93 /* logo.png */,
+				9CBA452B2B95EEDD00951D93 /* marker_icon.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		9CBA45312B960B3200951D93 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9CBA45322B960B4900951D93 /* LoginReactor.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +200,9 @@
 			dependencies = (
 			);
 			name = SecondHandMarket;
+			packageProductDependencies = (
+				9CBA452F2B960B0200951D93 /* ReactorKit */,
+			);
 			productName = SecondHandMarket;
 			productReference = 9CBA44EE2B95CA8C00951D93 /* SecondHandMarket.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +275,9 @@
 				Base,
 			);
 			mainGroup = 9CBA44E52B95CA8C00951D93;
+			packageReferences = (
+				9CBA452E2B960B0200951D93 /* XCRemoteSwiftPackageReference "ReactorKit" */,
+			);
 			productRefGroup = 9CBA44EF2B95CA8C00951D93 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +296,11 @@
 			files = (
 				9CBA44FE2B95CA8D00951D93 /* LaunchScreen.storyboard in Resources */,
 				9CBA44FB2B95CA8D00951D93 /* Assets.xcassets in Resources */,
+				9CBA452C2B95EEDD00951D93 /* logo.png in Resources */,
 				9CBA44F92B95CA8C00951D93 /* Main.storyboard in Resources */,
+				9CBA45282B95ED5900951D93 /* maplestorybold.ttf in Resources */,
+				9CBA45272B95ED5900951D93 /* maplestorylight.ttf in Resources */,
+				9CBA452D2B95EEDD00951D93 /* marker_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +325,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CBA44F62B95CA8C00951D93 /* ViewController.swift in Sources */,
 				9CBA44F22B95CA8C00951D93 /* AppDelegate.swift in Sources */,
+				9CBA45332B960B4900951D93 /* LoginReactor.swift in Sources */,
+				9C457B212B961CB700311DB9 /* LoginViewController.swift in Sources */,
 				9CBA44F42B95CA8C00951D93 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,6 +675,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9CBA452E2B960B0200951D93 /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactorKit/ReactorKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9CBA452F2B960B0200951D93 /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9CBA452E2B960B0200951D93 /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9CBA44E62B95CA8C00951D93 /* Project object */;
 }
