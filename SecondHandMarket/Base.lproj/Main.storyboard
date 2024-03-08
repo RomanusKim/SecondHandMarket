@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d8Y-Nr-Kjg">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -25,16 +25,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="XFm-kV-oTa">
-                                <rect key="frame" x="76" y="162" width="240" height="100"/>
+                                <rect key="frame" x="76" y="206" width="240" height="60"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="정든 물품을 판매하는 정품마켓" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmP-QP-AN3">
-                                <rect key="frame" x="24" y="374" width="345" height="22.333333333333314"/>
+                                <rect key="frame" x="24" y="418" width="345" height="22.333333333333314"/>
                                 <fontDescription key="fontDescription" name="MaplestoryBold" family="Maplestory" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vyf-YQ-mNu">
-                                <rect key="frame" x="40" y="448" width="313" height="82"/>
+                                <rect key="frame" x="40" y="492" width="313" height="82"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BlM-wM-QQN">
                                         <rect key="frame" x="0.0" y="0.0" width="313" height="37"/>
@@ -49,7 +49,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AEY-Aw-36s">
-                                <rect key="frame" x="40" y="604" width="313" height="90"/>
+                                <rect key="frame" x="40" y="648" width="313" height="90"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2J-TG-SHi">
                                         <rect key="frame" x="0.0" y="0.0" width="313" height="41"/>
@@ -66,6 +66,9 @@
                                             <fontDescription key="titleFontDescription" name="MaplestoryBold" family="Maplestory" pointSize="24"/>
                                             <color key="baseBackgroundColor" red="0.44121113420000002" green="0.80091005559999995" blue="0.68282788989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="5ng-wa-R7K" kind="show" id="cbe-6s-TqN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -87,6 +90,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NmP-QP-AN3" secondAttribute="trailing" constant="24" id="vFc-Tx-HV2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="mJM-vN-ZME"/>
                     <connections>
                         <outlet property="idTextField" destination="BlM-wM-QQN" id="Zez-Gd-DSx"/>
                         <outlet property="loginButton" destination="U2J-TG-SHi" id="OLD-Ym-J4c"/>
@@ -96,11 +100,112 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-676" y="1"/>
+            <point key="canvasLocation" x="205.34351145038167" y="0.70422535211267612"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="v9n-Yd-7IA">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="5ng-wa-R7K" customClass="SignUpViewController" customModule="SecondHandMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3AV-eX-W5d">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="닉네임" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZfU-Ub-y2E">
+                                <rect key="frame" x="40" y="227" width="313" height="37"/>
+                                <fontDescription key="fontDescription" name="MaplestoryLight" family="Maplestory" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameTextField:" destination="FfB-hh-Pbe" eventType="editingDidEnd" id="jLQ-nb-oTy"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ylJ-7l-QBj">
+                                <rect key="frame" x="40" y="321" width="313" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="EWn-wp-XXY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MaplestoryLight" family="Maplestory" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ALZ-7U-PgE">
+                                <rect key="frame" x="40" y="272" width="313" height="41"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="아이디" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZLy-Ue-t4x">
+                                        <rect key="frame" x="0.0" y="0.0" width="192" height="41"/>
+                                        <fontDescription key="fontDescription" name="MaplestoryLight" family="Maplestory" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7M-eF-IK1">
+                                        <rect key="frame" x="208" y="0.0" width="105" height="41"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="중복확인">
+                                            <fontDescription key="titleFontDescription" name="MaplestoryLight" family="Maplestory" pointSize="24"/>
+                                            <color key="baseBackgroundColor" red="0.44121113420000002" green="0.80091005559999995" blue="0.68282788989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIx-9d-udO">
+                                <rect key="frame" x="40" y="381" width="313" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="가입하기">
+                                    <fontDescription key="titleFontDescription" name="MaplestoryBold" family="Maplestory" pointSize="24"/>
+                                    <color key="baseBackgroundColor" red="0.44121113420000002" green="0.80091005559999995" blue="0.68282788989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MOa-xR-dXs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ylJ-7l-QBj" firstAttribute="leading" secondItem="MOa-xR-dXs" secondAttribute="leading" constant="40" id="7SY-ZF-ugI"/>
+                            <constraint firstItem="MOa-xR-dXs" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jIx-9d-udO" secondAttribute="trailing" symbolic="YES" id="Cbm-xO-872"/>
+                            <constraint firstItem="MOa-xR-dXs" firstAttribute="trailing" secondItem="ylJ-7l-QBj" secondAttribute="trailing" constant="40" id="GAF-57-Pj0"/>
+                            <constraint firstItem="ZfU-Ub-y2E" firstAttribute="leading" secondItem="MOa-xR-dXs" secondAttribute="leading" constant="40" id="ISd-lo-cx6"/>
+                            <constraint firstItem="ZLy-Ue-t4x" firstAttribute="top" secondItem="MOa-xR-dXs" secondAttribute="top" constant="169" id="IaT-lx-xGm"/>
+                            <constraint firstItem="ALZ-7U-PgE" firstAttribute="leading" secondItem="MOa-xR-dXs" secondAttribute="leading" constant="40" id="PE9-t0-Zso"/>
+                            <constraint firstItem="jIx-9d-udO" firstAttribute="top" secondItem="MOa-xR-dXs" secondAttribute="top" constant="278" id="QM6-qU-mEN"/>
+                            <constraint firstItem="ylJ-7l-QBj" firstAttribute="top" secondItem="ALZ-7U-PgE" secondAttribute="bottom" constant="8" id="Tq9-CL-Kjj"/>
+                            <constraint firstItem="ZfU-Ub-y2E" firstAttribute="top" secondItem="MOa-xR-dXs" secondAttribute="top" constant="124" id="Vwu-mB-E1B"/>
+                            <constraint firstItem="MOa-xR-dXs" firstAttribute="trailing" secondItem="jIx-9d-udO" secondAttribute="trailing" constant="40" id="YSO-VT-qbI"/>
+                            <constraint firstItem="MOa-xR-dXs" firstAttribute="trailing" secondItem="ALZ-7U-PgE" secondAttribute="trailing" constant="40" id="gD6-IB-yLG"/>
+                            <constraint firstItem="MOa-xR-dXs" firstAttribute="trailing" secondItem="ZfU-Ub-y2E" secondAttribute="trailing" constant="40" id="qEB-S0-1mG"/>
+                            <constraint firstItem="jIx-9d-udO" firstAttribute="leading" secondItem="MOa-xR-dXs" secondAttribute="leading" constant="40" id="veE-9G-IbF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zKV-jF-gB5"/>
+                    <connections>
+                        <outlet property="duplicateCheckButton" destination="W7M-eF-IK1" id="5zo-ST-CTg"/>
+                        <outlet property="nameTextField" destination="ZfU-Ub-y2E" id="KV5-9t-0au"/>
+                        <outlet property="newIdTextField" destination="ZLy-Ue-t4x" id="TRZ-xW-MfL"/>
+                        <outlet property="newPasswordTextField" destination="ylJ-7l-QBj" id="YRB-QS-Yd1"/>
+                        <outlet property="signUpButton" destination="jIx-9d-udO" id="o1v-P6-HPe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ljr-I2-a6V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="FfB-hh-Pbe" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1040" y="1"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fuB-nF-Eoe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d8Y-Nr-Kjg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FJm-ys-bKz">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rxI-ez-9HA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IC1-8a-mEV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-721.37404580152668" y="0.70422535211267612"/>
         </scene>
     </scenes>
     <resources>
-        <image name="logo.png" width="150" height="100"/>
+        <image name="logo.png" width="170" height="60"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
