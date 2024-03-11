@@ -46,19 +46,21 @@ class LoginViewController : UIViewController, StoryboardView {
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         
-//        reactor.state
-//            .map{$0.isLoginSuccess}
-//            .subscribe(onNext: { isLoginSuccess in
-//                    print("\(isLoginSuccess)")
-//                // true - Next VC
-//                // false - toast?
-//            }).disposed(by: disposeBag)
+        reactor.state
+            .map{$0.isLoginSuccess}
+            .subscribe(onNext: { isLoginSuccess in
+                    print("\(isLoginSuccess)")
+                if isLoginSuccess {
+                    self.goToLocationViewController()
+                }
+            }).disposed(by: disposeBag)
         
         reactor.state
             .map(\.isSignUpButtonClicked)
             .subscribe(onNext: { isSignUpButtonClicked in
                 print("isSignUpButtonClicked : \(isSignUpButtonClicked)")
-                if isSignUpButtonClicked { self.goToSignUpViewController() }
+                if isSignUpButtonClicked { self.goToSignUpViewController()
+                }
             })
             .disposed(by: disposeBag)
         
@@ -69,5 +71,14 @@ class LoginViewController : UIViewController, StoryboardView {
             return
         }
         self.navigationController?.popToViewController(signUpViewController, animated: true)
+    }
+    
+    private func goToLocationViewController() {
+        guard let locationViewController =
+                self.storyboard?
+            .instantiateViewController(withIdentifier: "LocationViewController") else {
+            return
+        }
+        self.navigationController?.popToViewController(locationViewController, animated: true)
     }
 }

@@ -6,3 +6,19 @@
 //
 
 import Foundation
+import ReactorKit
+
+class LocationReactor : Reactor {
+    
+    enum Action {
+        
+    }
+    enum Mutation {
+        
+    }
+    
+    struct State {
+        
+    }
+    var initialState: State = State()
+}

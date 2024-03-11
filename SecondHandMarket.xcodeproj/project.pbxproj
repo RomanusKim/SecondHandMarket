@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		352307D5A37BB4948F250DC2 /* Pods_SecondHandMarketTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D751209DDE6D59587269BC0 /* Pods_SecondHandMarketTests.framework */; };
+		8D80BCA24ECD1AE5F96F4505 /* Pods_SecondHandMarket_SecondHandMarketUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733A1DE59B3BD3DE78792983 /* Pods_SecondHandMarket_SecondHandMarketUITests.framework */; };
 		9C457B212B961CB700311DB9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C457B202B961CB700311DB9 /* LoginViewController.swift */; };
 		9C457B2C2B973BA500311DB9 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 9C457B2B2B973BA500311DB9 /* RxCocoa */; };
 		9C457B2E2B973BA500311DB9 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 9C457B2D2B973BA500311DB9 /* RxRelay */; };
@@ -18,6 +20,11 @@
 		9C5A9B162B98892700F94231 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A9B152B98892700F94231 /* Realm.swift */; };
 		9C5A9B192B98A10800F94231 /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 9C5A9B182B98A10800F94231 /* SwiftMessages */; };
 		9C5A9B1B2B98A10800F94231 /* SwiftMessages-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 9C5A9B1A2B98A10800F94231 /* SwiftMessages-Dynamic */; };
+		9C5A9B1E2B9F1FF400F94231 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9C5A9B1D2B9F1FF400F94231 /* Lottie */; };
+		9C5A9B212B9F205300F94231 /* location.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C5A9B202B9F205300F94231 /* location.json */; };
+		9C5A9B252B9F212900F94231 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A9B242B9F212900F94231 /* LocationViewController.swift */; };
+		9C5A9B272B9F27BE00F94231 /* LocationReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A9B262B9F27BE00F94231 /* LocationReactor.swift */; };
+		9C5A9B292B9F30E100F94231 /* NaverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A9B282B9F30E100F94231 /* NaverMapViewController.swift */; };
 		9CBA44F22B95CA8C00951D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA44F12B95CA8C00951D93 /* AppDelegate.swift */; };
 		9CBA44F42B95CA8C00951D93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA44F32B95CA8C00951D93 /* SceneDelegate.swift */; };
 		9CBA44F92B95CA8C00951D93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA44F72B95CA8C00951D93 /* Main.storyboard */; };
@@ -32,6 +39,7 @@
 		9CBA452D2B95EEDD00951D93 /* marker_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA452B2B95EEDD00951D93 /* marker_icon.png */; };
 		9CBA45302B960B0200951D93 /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9CBA452F2B960B0200951D93 /* ReactorKit */; };
 		9CBA45332B960B4900951D93 /* LoginReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA45322B960B4900951D93 /* LoginReactor.swift */; };
+		F964006009EF66FE7112A233 /* Pods_SecondHandMarket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CBE898482093830B4D5D85 /* Pods_SecondHandMarket.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +60,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01A64DF160C7EE1DDD30210D /* Pods-SecondHandMarket-SecondHandMarketUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondHandMarket-SecondHandMarketUITests.release.xcconfig"; path = "Target Support Files/Pods-SecondHandMarket-SecondHandMarketUITests/Pods-SecondHandMarket-SecondHandMarketUITests.release.xcconfig"; sourceTree = "<group>"; };
+		23F63C497A280CCC0E268ABD /* Pods-SecondHandMarketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondHandMarketTests.debug.xcconfig"; path = "Target Support Files/Pods-SecondHandMarketTests/Pods-SecondHandMarketTests.debug.xcconfig"; sourceTree = "<group>"; };
+		46AEC1C8D919673EF81A7F54 /* Pods-SecondHandMarket-SecondHandMarketUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondHandMarket-SecondHandMarketUITests.debug.xcconfig"; path = "Target Support Files/Pods-SecondHandMarket-SecondHandMarketUITests/Pods-SecondHandMarket-SecondHandMarketUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		578A1FA8EBD83AD705F468B2 /* Pods-SecondHandMarket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondHandMarket.debug.xcconfig"; path = "Target Support Files/Pods-SecondHandMarket/Pods-SecondHandMarket.debug.xcconfig"; sourceTree = "<group>"; };
+		5D09E0ED468F4C107AC2CCBB /* Pods-SecondHandMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondHandMarket.release.xcconfig"; path = "Target Support Files/Pods-SecondHandMarket/Pods-SecondHandMarket.release.xcconfig"; sourceTree = "<group>"; };
+		733A1DE59B3BD3DE78792983 /* Pods_SecondHandMarket_SecondHandMarketUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecondHandMarket_SecondHandMarketUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D751209DDE6D59587269BC0 /* Pods_SecondHandMarketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecondHandMarketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91CBE898482093830B4D5D85 /* Pods_SecondHandMarket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecondHandMarket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C457B202B961CB700311DB9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9C5A9B0B2B987BC800F94231 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9C5A9B0D2B98841200F94231 /* SignUpReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpReactor.swift; sourceTree = "<group>"; };
 		9C5A9B152B98892700F94231 /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
+		9C5A9B202B9F205300F94231 /* location.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = location.json; sourceTree = "<group>"; };
+		9C5A9B242B9F212900F94231 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		9C5A9B262B9F27BE00F94231 /* LocationReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationReactor.swift; sourceTree = "<group>"; };
+		9C5A9B282B9F30E100F94231 /* NaverMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMapViewController.swift; sourceTree = "<group>"; };
 		9CBA44EE2B95CA8C00951D93 /* SecondHandMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondHandMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBA44F12B95CA8C00951D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CBA44F32B95CA8C00951D93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +93,7 @@
 		9CBA452A2B95EEDD00951D93 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		9CBA452B2B95EEDD00951D93 /* marker_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marker_icon.png; sourceTree = "<group>"; };
 		9CBA45322B960B4900951D93 /* LoginReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginReactor.swift; sourceTree = "<group>"; };
+		BAAE9978AF34BCAA05A05AD0 /* Pods-SecondHandMarketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondHandMarketTests.release.xcconfig"; path = "Target Support Files/Pods-SecondHandMarketTests/Pods-SecondHandMarketTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,12 +103,14 @@
 			files = (
 				9C5A9B142B9888C000F94231 /* RealmSwift in Frameworks */,
 				9C5A9B192B98A10800F94231 /* SwiftMessages in Frameworks */,
+				9C5A9B1E2B9F1FF400F94231 /* Lottie in Frameworks */,
 				9C457B2E2B973BA500311DB9 /* RxRelay in Frameworks */,
 				9C457B2C2B973BA500311DB9 /* RxCocoa in Frameworks */,
 				9C5A9B1B2B98A10800F94231 /* SwiftMessages-Dynamic in Frameworks */,
 				9C457B302B973BA500311DB9 /* RxSwift in Frameworks */,
 				9CBA45302B960B0200951D93 /* ReactorKit in Frameworks */,
 				9C5A9B122B9888C000F94231 /* Realm in Frameworks */,
+				F964006009EF66FE7112A233 /* Pods_SecondHandMarket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				352307D5A37BB4948F250DC2 /* Pods_SecondHandMarketTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,17 +126,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D80BCA24ECD1AE5F96F4505 /* Pods_SecondHandMarket_SecondHandMarketUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		134766EDDD408D8F16A30E11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				578A1FA8EBD83AD705F468B2 /* Pods-SecondHandMarket.debug.xcconfig */,
+				5D09E0ED468F4C107AC2CCBB /* Pods-SecondHandMarket.release.xcconfig */,
+				46AEC1C8D919673EF81A7F54 /* Pods-SecondHandMarket-SecondHandMarketUITests.debug.xcconfig */,
+				01A64DF160C7EE1DDD30210D /* Pods-SecondHandMarket-SecondHandMarketUITests.release.xcconfig */,
+				23F63C497A280CCC0E268ABD /* Pods-SecondHandMarketTests.debug.xcconfig */,
+				BAAE9978AF34BCAA05A05AD0 /* Pods-SecondHandMarketTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9C457B1F2B961C9400311DB9 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				9C457B202B961CB700311DB9 /* LoginViewController.swift */,
 				9C5A9B0B2B987BC800F94231 /* SignUpViewController.swift */,
+				9C5A9B242B9F212900F94231 /* LocationViewController.swift */,
+				9C5A9B282B9F30E100F94231 /* NaverMapViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -125,6 +165,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		9C5A9B1F2B9F204700F94231 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				9C5A9B202B9F205300F94231 /* location.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
 		9CBA44E52B95CA8C00951D93 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +180,8 @@
 				9CBA45072B95CA8D00951D93 /* SecondHandMarketTests */,
 				9CBA45112B95CA8D00951D93 /* SecondHandMarketUITests */,
 				9CBA44EF2B95CA8C00951D93 /* Products */,
+				134766EDDD408D8F16A30E11 /* Pods */,
+				CAE820991C3AFE286FF87C47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,6 +232,7 @@
 		9CBA45232B95ECA700951D93 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9C5A9B1F2B9F204700F94231 /* json */,
 				9CBA45292B95EEC400951D93 /* image */,
 				9CBA45242B95ECC800951D93 /* Font */,
 			);
@@ -211,8 +262,19 @@
 			children = (
 				9CBA45322B960B4900951D93 /* LoginReactor.swift */,
 				9C5A9B0D2B98841200F94231 /* SignUpReactor.swift */,
+				9C5A9B262B9F27BE00F94231 /* LocationReactor.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CAE820991C3AFE286FF87C47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91CBE898482093830B4D5D85 /* Pods_SecondHandMarket.framework */,
+				733A1DE59B3BD3DE78792983 /* Pods_SecondHandMarket_SecondHandMarketUITests.framework */,
+				7D751209DDE6D59587269BC0 /* Pods_SecondHandMarketTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,9 +284,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CBA45182B95CA8D00951D93 /* Build configuration list for PBXNativeTarget "SecondHandMarket" */;
 			buildPhases = (
+				68531406116EC520F6C99D95 /* [CP] Check Pods Manifest.lock */,
 				9CBA44EA2B95CA8C00951D93 /* Sources */,
 				9CBA44EB2B95CA8C00951D93 /* Frameworks */,
 				9CBA44EC2B95CA8C00951D93 /* Resources */,
+				E7CCF784A65FEDF56DD95DCA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -240,6 +304,7 @@
 				9C5A9B132B9888C000F94231 /* RealmSwift */,
 				9C5A9B182B98A10800F94231 /* SwiftMessages */,
 				9C5A9B1A2B98A10800F94231 /* SwiftMessages-Dynamic */,
+				9C5A9B1D2B9F1FF400F94231 /* Lottie */,
 			);
 			productName = SecondHandMarket;
 			productReference = 9CBA44EE2B95CA8C00951D93 /* SecondHandMarket.app */;
@@ -249,6 +314,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CBA451B2B95CA8D00951D93 /* Build configuration list for PBXNativeTarget "SecondHandMarketTests" */;
 			buildPhases = (
+				37666AD23298CBAC5C5DA1C5 /* [CP] Check Pods Manifest.lock */,
 				9CBA45002B95CA8D00951D93 /* Sources */,
 				9CBA45012B95CA8D00951D93 /* Frameworks */,
 				9CBA45022B95CA8D00951D93 /* Resources */,
@@ -267,9 +333,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CBA451E2B95CA8D00951D93 /* Build configuration list for PBXNativeTarget "SecondHandMarketUITests" */;
 			buildPhases = (
+				7269C1B9009A30E01D41A18E /* [CP] Check Pods Manifest.lock */,
 				9CBA450A2B95CA8D00951D93 /* Sources */,
 				9CBA450B2B95CA8D00951D93 /* Frameworks */,
 				9CBA450C2B95CA8D00951D93 /* Resources */,
+				33B5693B63C12EDFA32A7D6F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -318,6 +386,7 @@
 				9C457B2A2B973BA500311DB9 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				9C5A9B102B9888C000F94231 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				9C5A9B172B98A10800F94231 /* XCRemoteSwiftPackageReference "SwiftMessages" */,
+				9C5A9B1C2B9F1FF400F94231 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 			);
 			productRefGroup = 9CBA44EF2B95CA8C00951D93 /* Products */;
 			projectDirPath = "";
@@ -341,6 +410,7 @@
 				9CBA44F92B95CA8C00951D93 /* Main.storyboard in Resources */,
 				9CBA45282B95ED5900951D93 /* maplestorybold.ttf in Resources */,
 				9CBA45272B95ED5900951D93 /* maplestorylight.ttf in Resources */,
+				9C5A9B212B9F205300F94231 /* location.json in Resources */,
 				9CBA452D2B95EEDD00951D93 /* marker_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,11 +431,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33B5693B63C12EDFA32A7D6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SecondHandMarket-SecondHandMarketUITests/Pods-SecondHandMarket-SecondHandMarketUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SecondHandMarket-SecondHandMarketUITests/Pods-SecondHandMarket-SecondHandMarketUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SecondHandMarket-SecondHandMarketUITests/Pods-SecondHandMarket-SecondHandMarketUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37666AD23298CBAC5C5DA1C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SecondHandMarketTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68531406116EC520F6C99D95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SecondHandMarket-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7269C1B9009A30E01D41A18E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SecondHandMarket-SecondHandMarketUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7CCF784A65FEDF56DD95DCA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SecondHandMarket/Pods-SecondHandMarket-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SecondHandMarket/Pods-SecondHandMarket-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SecondHandMarket/Pods-SecondHandMarket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9CBA44EA2B95CA8C00951D93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C5A9B292B9F30E100F94231 /* NaverMapViewController.swift in Sources */,
 				9CBA44F22B95CA8C00951D93 /* AppDelegate.swift in Sources */,
 				9CBA45332B960B4900951D93 /* LoginReactor.swift in Sources */,
 				9C457B212B961CB700311DB9 /* LoginViewController.swift in Sources */,
@@ -373,6 +547,8 @@
 				9CBA44F42B95CA8C00951D93 /* SceneDelegate.swift in Sources */,
 				9C5A9B0E2B98841200F94231 /* SignUpReactor.swift in Sources */,
 				9C5A9B0C2B987BC800F94231 /* SignUpViewController.swift in Sources */,
+				9C5A9B252B9F212900F94231 /* LocationViewController.swift in Sources */,
+				9C5A9B272B9F27BE00F94231 /* LocationReactor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,7 +641,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -528,7 +704,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -549,6 +725,7 @@
 		};
 		9CBA45192B95CA8D00951D93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 578A1FA8EBD83AD705F468B2 /* Pods-SecondHandMarket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -577,6 +754,7 @@
 		};
 		9CBA451A2B95CA8D00951D93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D09E0ED468F4C107AC2CCBB /* Pods-SecondHandMarket.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -605,6 +783,7 @@
 		};
 		9CBA451C2B95CA8D00951D93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23F63C497A280CCC0E268ABD /* Pods-SecondHandMarketTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -625,6 +804,7 @@
 		};
 		9CBA451D2B95CA8D00951D93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAAE9978AF34BCAA05A05AD0 /* Pods-SecondHandMarketTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -645,6 +825,7 @@
 		};
 		9CBA451F2B95CA8D00951D93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46AEC1C8D919673EF81A7F54 /* Pods-SecondHandMarket-SecondHandMarketUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -663,6 +844,7 @@
 		};
 		9CBA45202B95CA8D00951D93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01A64DF160C7EE1DDD30210D /* Pods-SecondHandMarket-SecondHandMarketUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -745,6 +927,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		9C5A9B1C2B9F1FF400F94231 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.1;
+			};
+		};
 		9CBA452E2B960B0200951D93 /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactorKit/ReactorKit.git";
@@ -790,6 +980,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9C5A9B172B98A10800F94231 /* XCRemoteSwiftPackageReference "SwiftMessages" */;
 			productName = "SwiftMessages-Dynamic";
+		};
+		9C5A9B1D2B9F1FF400F94231 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C5A9B1C2B9F1FF400F94231 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
 		};
 		9CBA452F2B960B0200951D93 /* ReactorKit */ = {
 			isa = XCSwiftPackageProductDependency;

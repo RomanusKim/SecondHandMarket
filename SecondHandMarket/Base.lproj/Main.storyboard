@@ -58,6 +58,9 @@
                                             <fontDescription key="titleFontDescription" name="MaplestoryBold" family="Maplestory" pointSize="24"/>
                                             <color key="baseBackgroundColor" red="0.44121113420000002" green="0.80091005559999995" blue="0.68282788989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="1iI-n9-GIc" kind="show" id="T8O-cn-0e4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wZ-MC-EHD">
                                         <rect key="frame" x="0.0" y="49" width="313" height="41"/>
@@ -100,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="205.34351145038167" y="0.70422535211267612"/>
+            <point key="canvasLocation" x="207" y="1"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="v9n-Yd-7IA">
@@ -183,7 +186,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ljr-I2-a6V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="FfB-hh-Pbe" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1040" y="1"/>
+            <point key="canvasLocation" x="1305" y="344"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fuB-nF-Eoe">
@@ -202,6 +205,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IC1-8a-mEV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-721.37404580152668" y="0.70422535211267612"/>
+        </scene>
+        <!--Location View Controller-->
+        <scene sceneID="xK1-FI-URP">
+            <objects>
+                <viewController storyboardIdentifier="LocationViewController" id="1iI-n9-GIc" customClass="LocationViewController" customModule="SecondHandMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ozt-Kl-8ca">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95f-8q-TSW">
+                                <rect key="frame" x="40" y="611" width="313" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="내 동네 설정하기">
+                                    <fontDescription key="titleFontDescription" name="MaplestoryBold" family="Maplestory" pointSize="24"/>
+                                    <color key="baseBackgroundColor" red="0.44121113420000002" green="0.80091005559999995" blue="0.68282788989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TY0-WR-YQB">
+                                <rect key="frame" x="40" y="260" width="313" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="우리 동네 중고 직거래 정품마켓" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxN-zL-1ch">
+                                <rect key="frame" x="24" y="501.99999999999994" width="345" height="22.333333333333314"/>
+                                <fontDescription key="fontDescription" name="MaplestoryBold" family="Maplestory" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zFS-KL-z5Y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TY0-WR-YQB" firstAttribute="top" secondItem="zFS-KL-z5Y" secondAttribute="top" constant="157" id="DcN-vv-cdB"/>
+                            <constraint firstItem="yxN-zL-1ch" firstAttribute="top" secondItem="ozt-Kl-8ca" secondAttribute="top" constant="502" id="EzZ-1g-pSF"/>
+                            <constraint firstItem="zFS-KL-z5Y" firstAttribute="trailing" secondItem="yxN-zL-1ch" secondAttribute="trailing" constant="24" id="UgP-xg-L53"/>
+                            <constraint firstItem="TY0-WR-YQB" firstAttribute="leading" secondItem="zFS-KL-z5Y" secondAttribute="leading" constant="40" id="bN8-vG-8tI"/>
+                            <constraint firstItem="zFS-KL-z5Y" firstAttribute="trailing" secondItem="TY0-WR-YQB" secondAttribute="trailing" constant="40" id="bwX-cw-Pyq"/>
+                            <constraint firstItem="yxN-zL-1ch" firstAttribute="leading" secondItem="zFS-KL-z5Y" secondAttribute="leading" constant="24" id="i8N-gy-hzM"/>
+                            <constraint firstItem="yxN-zL-1ch" firstAttribute="top" secondItem="ozt-Kl-8ca" secondAttribute="bottom" constant="-350" id="ywU-1D-rpb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="obZ-DN-bbd"/>
+                    <connections>
+                        <outlet property="locationView" destination="TY0-WR-YQB" id="8ku-4H-euS"/>
+                        <outlet property="setLocationButton" destination="95f-8q-TSW" id="2Id-pL-yRL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IzZ-LR-6Kg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1320" y="-330"/>
         </scene>
     </scenes>
     <resources>

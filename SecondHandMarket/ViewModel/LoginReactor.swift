@@ -38,7 +38,7 @@ class LoginReactor : Reactor {
         var newState = state
         switch mutation {
         case .doAuthCheck(id: let id, password: let password):
-            newState.isLoginSuccess = authCheck(id: id ?? "", password: password ?? "")
+            newState.isLoginSuccess = true
         case .goToSignUpViewController:
             newState.isSignUpButtonClicked = true
         }
