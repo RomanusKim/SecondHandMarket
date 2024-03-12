@@ -198,6 +198,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zgr-eR-5la">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rxI-ez-9HA"/>
                     </connections>
@@ -214,16 +217,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95f-8q-TSW">
-                                <rect key="frame" x="40" y="611" width="313" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="내 동네 설정하기">
-                                    <fontDescription key="titleFontDescription" name="MaplestoryBold" family="Maplestory" pointSize="24"/>
-                                    <color key="baseBackgroundColor" red="0.44121113420000002" green="0.80091005559999995" blue="0.68282788989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TY0-WR-YQB">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CVV-Z3-gxb">
+                                <rect key="frame" x="40" y="611" width="313" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95f-8q-TSW">
+                                        <rect key="frame" x="0.0" y="0.0" width="313" height="41"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="내 동네 설정하기">
+                                            <fontDescription key="titleFontDescription" name="MaplestoryBold" family="Maplestory" pointSize="24"/>
+                                            <color key="baseBackgroundColor" red="0.44121113420000002" green="0.80091005559999995" blue="0.68282788989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPA-tM-bx9">
+                                        <rect key="frame" x="0.0" y="49" width="313" height="41"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="다음">
+                                            <fontDescription key="titleFontDescription" name="MaplestoryBold" family="Maplestory" pointSize="24"/>
+                                            <color key="baseBackgroundColor" red="0.44121113420000002" green="0.80091005559999995" blue="0.68282788989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="0fc-3E-iWV" kind="show" id="9C3-Yy-pi1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TY0-WR-YQB">
                                 <rect key="frame" x="40" y="260" width="313" height="150"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -233,32 +251,155 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iX-4x-DYb">
+                                <rect key="frame" x="24" y="545" width="345" height="22.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22.333333333333371" id="oLe-kK-jux"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MaplestoryBold" family="Maplestory" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zFS-KL-z5Y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="CVV-Z3-gxb" firstAttribute="centerX" secondItem="zFS-KL-z5Y" secondAttribute="centerX" id="4aE-k6-ou3"/>
                             <constraint firstItem="TY0-WR-YQB" firstAttribute="top" secondItem="zFS-KL-z5Y" secondAttribute="top" constant="157" id="DcN-vv-cdB"/>
                             <constraint firstItem="yxN-zL-1ch" firstAttribute="top" secondItem="ozt-Kl-8ca" secondAttribute="top" constant="502" id="EzZ-1g-pSF"/>
+                            <constraint firstItem="1iX-4x-DYb" firstAttribute="leading" secondItem="zFS-KL-z5Y" secondAttribute="leading" constant="24" id="QuZ-IR-KaK"/>
+                            <constraint firstItem="1iX-4x-DYb" firstAttribute="top" secondItem="yxN-zL-1ch" secondAttribute="bottom" constant="20.666666666666742" id="SHr-3M-jiO"/>
                             <constraint firstItem="zFS-KL-z5Y" firstAttribute="trailing" secondItem="yxN-zL-1ch" secondAttribute="trailing" constant="24" id="UgP-xg-L53"/>
+                            <constraint firstItem="TY0-WR-YQB" firstAttribute="centerX" secondItem="1iX-4x-DYb" secondAttribute="centerX" id="X2w-88-j8s"/>
+                            <constraint firstItem="yxN-zL-1ch" firstAttribute="top" secondItem="TY0-WR-YQB" secondAttribute="bottom" constant="92" id="XqA-jW-5Px"/>
+                            <constraint firstItem="wPA-tM-bx9" firstAttribute="leading" secondItem="zFS-KL-z5Y" secondAttribute="leading" constant="40" id="YPa-Ng-dVR"/>
                             <constraint firstItem="TY0-WR-YQB" firstAttribute="leading" secondItem="zFS-KL-z5Y" secondAttribute="leading" constant="40" id="bN8-vG-8tI"/>
                             <constraint firstItem="zFS-KL-z5Y" firstAttribute="trailing" secondItem="TY0-WR-YQB" secondAttribute="trailing" constant="40" id="bwX-cw-Pyq"/>
                             <constraint firstItem="yxN-zL-1ch" firstAttribute="leading" secondItem="zFS-KL-z5Y" secondAttribute="leading" constant="24" id="i8N-gy-hzM"/>
+                            <constraint firstItem="CVV-Z3-gxb" firstAttribute="top" secondItem="zFS-KL-z5Y" secondAttribute="top" constant="508" id="nBh-YA-3ic"/>
+                            <constraint firstItem="zFS-KL-z5Y" firstAttribute="trailing" secondItem="1iX-4x-DYb" secondAttribute="trailing" constant="24" id="nkS-pL-mCu"/>
                             <constraint firstItem="yxN-zL-1ch" firstAttribute="top" secondItem="ozt-Kl-8ca" secondAttribute="bottom" constant="-350" id="ywU-1D-rpb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="obZ-DN-bbd"/>
                     <connections>
                         <outlet property="locationView" destination="TY0-WR-YQB" id="8ku-4H-euS"/>
-                        <outlet property="setLocationButton" destination="95f-8q-TSW" id="2Id-pL-yRL"/>
+                        <outlet property="myAddressLabel" destination="1iX-4x-DYb" id="VuF-Ci-Bhj"/>
+                        <outlet property="nextButton" destination="wPA-tM-bx9" id="9Hf-pb-1Oe"/>
+                        <outlet property="setLocationButton" destination="95f-8q-TSW" id="CEV-ys-Fj0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IzZ-LR-6Kg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1320" y="-330"/>
+            <point key="canvasLocation" x="1291" y="-323"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="A9N-tX-Eb2">
+            <objects>
+                <viewController id="1to-sV-l63" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dxg-uD-onV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="222222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaP-r7-KCv">
+                                <rect key="frame" x="155" y="416" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="udZ-N9-yiP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="bubble" catalog="system" selectedImage="bubble.fill" id="Yba-rx-X4o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="09Q-Uk-q2L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2944" y="-1077"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="RXm-ws-5Ew">
+            <objects>
+                <viewController id="sQX-li-t2Z" customClass="HomeViewController" customModule="SecondHandMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J4z-JX-7BB" customClass="Hom">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGM-AL-6xb">
+                                <rect key="frame" x="24" y="103" width="345" height="27"/>
+                                <fontDescription key="fontDescription" name="MaplestoryBold" family="Maplestory" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WWe-Wu-aSE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vGM-AL-6xb" firstAttribute="leading" secondItem="WWe-Wu-aSE" secondAttribute="leading" constant="24" id="Fs4-rn-w6a"/>
+                            <constraint firstItem="WWe-Wu-aSE" firstAttribute="trailing" secondItem="vGM-AL-6xb" secondAttribute="trailing" constant="24" id="lzY-Jr-L83"/>
+                            <constraint firstItem="vGM-AL-6xb" firstAttribute="top" secondItem="WWe-Wu-aSE" secondAttribute="top" id="xso-JD-qcd"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="house" catalog="system" selectedImage="house.fill" id="YiU-WA-e62"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eR6-bb-8Z0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2955" y="218"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="kAv-f2-yaL">
+            <objects>
+                <tabBarController id="0fc-3E-iWV" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RCn-y9-PhL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="sQX-li-t2Z" kind="relationship" relationship="viewControllers" id="GX1-os-mGq"/>
+                        <segue destination="1to-sV-l63" kind="relationship" relationship="viewControllers" id="STh-i9-mI8"/>
+                        <segue destination="JAc-2a-1QX" kind="relationship" relationship="viewControllers" id="oBy-9f-fHq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sbh-O2-Vct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2103" y="-323"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="khV-pk-nIW">
+            <objects>
+                <viewController id="JAc-2a-1QX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H2q-VA-RK3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="33333333333" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sz0-sD-Qp4">
+                                <rect key="frame" x="155" y="416" width="113" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MeC-9Y-pZW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" selectedImage="person.fill" id="LmP-Vv-WZC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4uC-Jj-mMA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2944" y="-430"/>
         </scene>
     </scenes>
     <resources>
+        <image name="bubble" catalog="system" width="128" height="110"/>
+        <image name="bubble.fill" catalog="system" width="128" height="110"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="logo.png" width="170" height="60"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
