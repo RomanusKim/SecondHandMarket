@@ -16,10 +16,9 @@ protocol ZipCodeDelegate: AnyObject {
 }
 
 class LocationViewController : UIViewController, StoryboardView, ZipCodeDelegate {
-    var disposeBag: RxSwift.DisposeBag = DisposeBag()
-
-    
     typealias Reactor = LocationReactor
+    
+    var disposeBag: RxSwift.DisposeBag = DisposeBag()
 
     @IBOutlet weak var locationView: UIView!
     @IBOutlet weak var setLocationButton: UIButton!
@@ -49,20 +48,35 @@ class LocationViewController : UIViewController, StoryboardView, ZipCodeDelegate
         setLocationButton
             .rx
             .tap
-            .map{Reactor.Action.setLocation}
+            .map{ Reactor.Action.setLocation }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
+        nextButton
+            .rx
+            .tap
+            .map { Reactor.Action.clickNextButton }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         
         reactor.state
             .map { $0.isSetLocationButtonClicked }
+            .distinctUntilChanged()
             .subscribe (onNext: { isSetLocationButtonClicked in
-                print("isSetLocation : \(isSetLocationButtonClicked)")
                 if isSetLocationButtonClicked {
-                        //go to KakaoVC
                     let zipCodeViewController = ZipCodeViewController()
-                    zipCodeViewController.delgate = self
+                    zipCodeViewController.delegate = self
                     self.present(zipCodeViewController, animated: true)
                 }
+            })
+            .disposed(by: disposeBag)
+        
+        reactor.state
+            .map(\.isNextButtonClicked)
+            .distinctUntilChanged()
+            .filter{ $0 }
+            .subscribe(onNext: { _ in
+                self.goToHomeViewController()
             })
             .disposed(by: disposeBag)
         
@@ -86,5 +100,14 @@ class LocationViewController : UIViewController, StoryboardView, ZipCodeDelegate
     
     func didReceive(address: String) {
         myAddressSubject.onNext(address)
+    }
+    
+    private func goToHomeViewController() {
+        guard let homeViewController =
+                self.storyboard?
+            .instantiateViewController(withIdentifier: "HomeViewController") else {
+            return
+        }
+        self.navigationController?.pushViewController(homeViewController, animated: true)
     }
 }

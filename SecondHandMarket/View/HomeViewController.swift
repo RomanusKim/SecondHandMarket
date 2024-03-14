@@ -10,6 +10,9 @@ import UIKit
 class HomeViewController: UIViewController {
 
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    private var productList = [Product]()
     // Subject로 바꿀것인가 그냥 둘것인가
     var address = UserDefaults.standard.string(forKey: "Address")
     override func viewDidLoad() {

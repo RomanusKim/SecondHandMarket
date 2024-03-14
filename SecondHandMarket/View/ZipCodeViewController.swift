@@ -9,7 +9,7 @@ import Foundation
 import WebKit
 
 class ZipCodeViewController : UIViewController {
-    weak var delgate: ZipCodeDelegate?
+    weak var delegate: ZipCodeDelegate?
     
     
     var webView: WKWebView?
@@ -70,7 +70,7 @@ extension ZipCodeViewController: WKScriptMessageHandler {
         if let data = message.body as? [String: Any] {
             myAddress = data["bname"] as? String ?? ""
             }
-        delgate?.didReceive(address: myAddress)
+        delegate?.didReceive(address: myAddress)
             self.dismiss(animated: true, completion: nil)
         }
 }

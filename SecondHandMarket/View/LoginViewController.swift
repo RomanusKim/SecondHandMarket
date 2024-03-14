@@ -49,21 +49,15 @@ class LoginViewController : UIViewController, StoryboardView {
         reactor.state
             .map{$0.isLoginSuccess}
             .subscribe(onNext: { isLoginSuccess in
-                    print("\(isLoginSuccess)")
-                if isLoginSuccess {
-                    self.goToLocationViewController()
-                }
+                if isLoginSuccess { self.goToLocationViewController() }
             }).disposed(by: disposeBag)
         
         reactor.state
             .map(\.isSignUpButtonClicked)
             .subscribe(onNext: { isSignUpButtonClicked in
-                print("isSignUpButtonClicked : \(isSignUpButtonClicked)")
-                if isSignUpButtonClicked { self.goToSignUpViewController()
-                }
+                if isSignUpButtonClicked { self.goToSignUpViewController() }
             })
             .disposed(by: disposeBag)
-        
     }
     
     private func goToSignUpViewController() {
