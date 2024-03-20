@@ -20,8 +20,10 @@ class LocationReactor : Reactor {
     }
     
     struct State {
-        var isSetLocationButtonClicked = false
-        var isNextButtonClicked = false
+//        var isSetLocationButtonClicked = false
+//        var isNextButtonClicked = false
+        @Pulse var isSetLocationButtonClicked : Void? = nil
+        @Pulse var isNextButtonClicked : Void? = nil
     }
     
     var initialState: State = State()
@@ -39,11 +41,9 @@ class LocationReactor : Reactor {
         var newState = state
         switch mutation {
         case .goToKakaoMapViewController:
-            newState.isSetLocationButtonClicked = true
-            newState.isNextButtonClicked = false
+            newState.isSetLocationButtonClicked = ()
         case .goToHomeViewController:
-            newState.isSetLocationButtonClicked = false
-            newState.isNextButtonClicked = true
+            newState.isNextButtonClicked = ()
         }
         
         return newState

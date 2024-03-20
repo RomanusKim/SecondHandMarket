@@ -59,22 +59,17 @@ class LocationViewController : UIViewController, StoryboardView, ZipCodeDelegate
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         
-        reactor.state
-            .map { $0.isSetLocationButtonClicked }
-            .distinctUntilChanged()
+        reactor.pulse(\.$isSetLocationButtonClicked)
+            .compactMap { $0 }
             .subscribe (onNext: { isSetLocationButtonClicked in
-                if isSetLocationButtonClicked {
-                    let zipCodeViewController = ZipCodeViewController()
-                    zipCodeViewController.delegate = self
-                    self.present(zipCodeViewController, animated: true)
-                }
+                let zipCodeViewController = ZipCodeViewController()
+                zipCodeViewController.delegate = self
+                self.present(zipCodeViewController, animated: true)
             })
             .disposed(by: disposeBag)
         
-        reactor.state
-            .map(\.isNextButtonClicked)
-            .distinctUntilChanged()
-            .filter{ $0 }
+        reactor.pulse(\.$isNextButtonClicked)
+            .compactMap { $0 }
             .subscribe(onNext: { _ in
                 self.goToHomeViewController()
             })
@@ -85,7 +80,6 @@ class LocationViewController : UIViewController, StoryboardView, ZipCodeDelegate
                 self?.myAddressLabel.text = address
                 if ((address?.isEmpty) != nil) {
                     print("isNotEmpty")
-                    // 입장하기 버튼 활성화
                     UserDefaults.standard.setValue(address, forKey: "Address")
                     self?.nextButton.isEnabled = true
                 }
