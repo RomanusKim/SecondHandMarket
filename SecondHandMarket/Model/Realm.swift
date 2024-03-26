@@ -8,12 +8,6 @@
 import Foundation
 import RealmSwift
 
-class User : Object {
-    @Persisted var name: String = ""
-    @Persisted var id: String = ""
-    @Persisted var password: String = ""
-}
-
 class Product : Object {
     @Persisted var pName: String = ""
     @Persisted var price: String = ""
@@ -32,20 +26,6 @@ class DataBaseManager {
         } catch let error {
             fatalError("Failed to initialize Realm: \(error.localizedDescription)")
         }
-    }
-    
-    func saveUser(user: User) {
-        do {
-            try realm.write {
-                realm.add(user)
-            }
-        } catch let error {
-            print("Error Saving user: \(error.localizedDescription)")
-        }
-    }
-    
-    func getUser() -> Results<User> {
-        return realm.objects(User.self)
     }
     
     func deleteUser() {

@@ -24,10 +24,11 @@ class SignUpViewController : UIViewController, StoryboardView {
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var duplicateCheckButton: UIButton!
 
+    let isSignUpButtonEnabled = BehaviorSubject<Bool>(value: false)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.reactor = SignUpReactor()
-//        DataBaseManager.shared.deleteUser()
     }
     
     required init?(coder: NSCoder) {
@@ -35,47 +36,72 @@ class SignUpViewController : UIViewController, StoryboardView {
     }
     
     func bind(reactor: SignUpReactor) {
+        Observable.combineLatest(
+            reactor.state.map(\.isDuplicate).distinctUntilChanged(),
+            self.nameTextField.rx.text.orEmpty,
+            self.newIdTextField.rx.text.orEmpty,
+            self.newPasswordTextField.rx.text.orEmpty)
+        .map { isDuplicate, name, email, password in
+            return !(isDuplicate ?? false) && !email.isEmpty &&
+            !name.isEmpty && !password.isEmpty
+        }
+        .bind(to: isSignUpButtonEnabled)
+        .disposed(by: disposeBag)
+        
+        isSignUpButtonEnabled
+            .bind(to: self.signUpButton.rx.isEnabled)
+            .disposed(by: disposeBag)
+        
+        
         signUpButton
             .rx.tap
             .map {
-                SignUpReactor.Action.clickSignUpButton(name: self.nameTextField.text, id: self.newIdTextField.text, password: self.newPasswordTextField.text)
+                SignUpReactor.Action.clickSignUpButton(
+                    name: self.nameTextField.text,
+                    email: self.newIdTextField.text,
+                    password: self.newPasswordTextField.text)
             }
-            .bind(to: reactor.action) // 구독
+            .bind(to: reactor.action)
             .disposed(by: disposeBag)
         
         duplicateCheckButton
             .rx.tap
-            .map {
-                SignUpReactor.Action.clickDuplicateCheckButton(id: self.newIdTextField.text)
-            }
-            .bind(to: reactor.action) // 구독
+            .map { SignUpReactor.Action.clickDuplicateCheckButton(email: self.newIdTextField.text) }
+            .bind(to: reactor.action)
             .disposed(by: disposeBag)
         
         reactor.state
-            .map(\.isSignUpSuccess)
-            .subscribe(onNext: { isSignUpSuccess in
-                if isSignUpSuccess { self.navigationController?.popViewController(animated: true) }
+            .map(\.isRegistSuccess)
+            .distinctUntilChanged()
+            .filter { $0 != nil }
+            .subscribe(onNext: { isRegistSuccess in
+                if isRegistSuccess ?? false {
+                    self.navigationController?.popViewController(animated: true)
+                } else {
+                    self.showMessage(title: "알림", body: "회원가입 실패")
+                }
             })
             .disposed(by: disposeBag)
         
         reactor.state
-            .map(\.isExistId)
-            .subscribe(onNext: { isExistId in
-                if isExistId {
-                    print("Sign Up Fail!!")
-                    self.showMessage()
+            .map(\.isDuplicate)
+            .distinctUntilChanged()
+            .filter { $0 != nil }
+            .subscribe(onNext: { isDuplicate in
+                if isDuplicate ?? false {
+                    self.showMessage(title: "알림", body: "이미 등록된 이메일입니다.")
                 } else {
-                    print("Sign Up Success!!")
+                    self.showMessage(title: "알림", body: "사용 가능한 이메일입니다.")
                 }
             })
             .disposed(by: disposeBag)
 
     }
     
-    private func showMessage() {
+    private func showMessage(title: String, body: String) {
         let message = MessageView.viewFromNib(layout: .cardView)
         message.configureTheme(.info)
-        message.configureContent(title: "알림", body: "이미 등록된 사용자입니다.")
+        message.configureContent(title: title, body: body)
         message.button?.isHidden = true
         
         SwiftMessages.show(view: message)
