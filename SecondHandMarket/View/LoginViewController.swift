@@ -35,7 +35,7 @@ class LoginViewController : UIViewController, StoryboardView {
         // 로그인
         loginButton
             .rx.tap
-            .map { LoginReactor.Action.clickLogin(id: self.idTextField.text, password: self.passwordTextField.text) }
+            .map { LoginReactor.Action.clickLogin(email: self.idTextField.text, password: self.passwordTextField.text) }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         
@@ -48,8 +48,11 @@ class LoginViewController : UIViewController, StoryboardView {
         
         reactor.state
             .map{$0.isLoginSuccess}
+            .distinctUntilChanged()
+            .filter { $0 != nil }
             .subscribe(onNext: { isLoginSuccess in
-                if isLoginSuccess { self.goToLocationViewController() }
+                if isLoginSuccess ?? false { self.goToLocationViewController()
+                }
             }).disposed(by: disposeBag)
         
         reactor.state
@@ -68,11 +71,19 @@ class LoginViewController : UIViewController, StoryboardView {
     }
     
     private func goToLocationViewController() {
+        let controllers = self.navigationController?.viewControllers
+        
         guard let locationViewController =
                 self.storyboard?
             .instantiateViewController(withIdentifier: "LocationViewController") else {
             return
         }
-        self.navigationController?.popToViewController(locationViewController, animated: true)
+        
+        for vc in controllers! {
+            if vc is LocationViewController {
+                _ = self.navigationController?.popToViewController(vc as! LocationViewController, animated: true)
+            }
+        }
+        
     }
 }
