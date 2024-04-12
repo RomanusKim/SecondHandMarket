@@ -37,6 +37,10 @@
 		9C84AC962BB2E2E20029BA31 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9C84AC952BB2E2E20029BA31 /* FirebaseFirestore */; };
 		9C84AC982BB2E2E20029BA31 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 9C84AC972BB2E2E20029BA31 /* FirebaseFirestoreCombine-Community */; };
 		9C84AC9A2BB2EDD20029BA31 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84AC992BB2EDD20029BA31 /* User.swift */; };
+		9C84AC9C2BB447100029BA31 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9C84AC9B2BB447100029BA31 /* FirebaseStorage */; };
+		9C84AC9E2BB459B30029BA31 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84AC9D2BB459B30029BA31 /* Product.swift */; };
+		9C84ACA12BC936660029BA31 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84ACA02BC936660029BA31 /* UserAPI.swift */; };
+		9C84ACA42BC93EEE0029BA31 /* CommonUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84ACA32BC93EEE0029BA31 /* CommonUtility.swift */; };
 		9CBA44F22B95CA8C00951D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA44F12B95CA8C00951D93 /* AppDelegate.swift */; };
 		9CBA44F42B95CA8C00951D93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA44F32B95CA8C00951D93 /* SceneDelegate.swift */; };
 		9CBA44F92B95CA8C00951D93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA44F72B95CA8C00951D93 /* Main.storyboard */; };
@@ -96,6 +100,9 @@
 		9C84AC8B2BA34B760029BA31 /* HomeViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewReactor.swift; sourceTree = "<group>"; };
 		9C84AC8E2BAADE590029BA31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9C84AC992BB2EDD20029BA31 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9C84AC9D2BB459B30029BA31 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		9C84ACA02BC936660029BA31 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		9C84ACA32BC93EEE0029BA31 /* CommonUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtility.swift; sourceTree = "<group>"; };
 		9CBA44EE2B95CA8C00951D93 /* SecondHandMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondHandMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBA44F12B95CA8C00951D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CBA44F32B95CA8C00951D93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +136,7 @@
 				9C457B2C2B973BA500311DB9 /* RxCocoa in Frameworks */,
 				9C5A9B1B2B98A10800F94231 /* SwiftMessages-Dynamic in Frameworks */,
 				9C84AC922BAADE8F0029BA31 /* FirebaseAnalytics in Frameworks */,
+				9C84AC9C2BB447100029BA31 /* FirebaseStorage in Frameworks */,
 				9C84AC942BB2E0E50029BA31 /* FirebaseAuth in Frameworks */,
 				9C457B302B973BA500311DB9 /* RxSwift in Frameworks */,
 				9CBA45302B960B0200951D93 /* ReactorKit in Frameworks */,
@@ -173,6 +181,7 @@
 		9C457B1F2B961C9400311DB9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9C84ACA22BC93ED00029BA31 /* Common */,
 				9C457B202B961CB700311DB9 /* LoginViewController.swift */,
 				9C5A9B0B2B987BC800F94231 /* SignUpViewController.swift */,
 				9C5A9B242B9F212900F94231 /* LocationViewController.swift */,
@@ -188,8 +197,10 @@
 		9C5A9B0F2B98871F00F94231 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9C84AC9F2BC936500029BA31 /* API */,
 				9C5A9B152B98892700F94231 /* Realm.swift */,
 				9C84AC992BB2EDD20029BA31 /* User.swift */,
+				9C84AC9D2BB459B30029BA31 /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,6 +211,22 @@
 				9C5A9B202B9F205300F94231 /* location.json */,
 			);
 			path = json;
+			sourceTree = "<group>";
+		};
+		9C84AC9F2BC936500029BA31 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9C84ACA02BC936660029BA31 /* UserAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9C84ACA22BC93ED00029BA31 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9C84ACA32BC93EEE0029BA31 /* CommonUtility.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		9CBA44E52B95CA8C00951D93 = {
@@ -341,6 +368,7 @@
 				9C84AC932BB2E0E50029BA31 /* FirebaseAuth */,
 				9C84AC952BB2E2E20029BA31 /* FirebaseFirestore */,
 				9C84AC972BB2E2E20029BA31 /* FirebaseFirestoreCombine-Community */,
+				9C84AC9B2BB447100029BA31 /* FirebaseStorage */,
 			);
 			productName = SecondHandMarket;
 			productReference = 9CBA44EE2B95CA8C00951D93 /* SecondHandMarket.app */;
@@ -580,6 +608,7 @@
 				9C5A9B292B9F30E100F94231 /* NaverMapViewController.swift in Sources */,
 				9C5A9B2B2BA060A200F94231 /* ZipCodeViewController.swift in Sources */,
 				9CBA44F22B95CA8C00951D93 /* AppDelegate.swift in Sources */,
+				9C84ACA12BC936660029BA31 /* UserAPI.swift in Sources */,
 				9CBA45332B960B4900951D93 /* LoginReactor.swift in Sources */,
 				9C84AC8C2BA34B760029BA31 /* HomeViewReactor.swift in Sources */,
 				9C84AC862BA32F520029BA31 /* ProductCell.swift in Sources */,
@@ -587,7 +616,9 @@
 				9C84AC9A2BB2EDD20029BA31 /* User.swift in Sources */,
 				9C5A9B162B98892700F94231 /* Realm.swift in Sources */,
 				9C84AC8A2BA342310029BA31 /* AddProductReactor.swift in Sources */,
+				9C84ACA42BC93EEE0029BA31 /* CommonUtility.swift in Sources */,
 				9CBA44F42B95CA8C00951D93 /* SceneDelegate.swift in Sources */,
+				9C84AC9E2BB459B30029BA31 /* Product.swift in Sources */,
 				9C84AC882BA3349F0029BA31 /* AddProductViewController.swift in Sources */,
 				9C5A9B0E2B98841200F94231 /* SignUpReactor.swift in Sources */,
 				9C5A9B0C2B987BC800F94231 /* SignUpViewController.swift in Sources */,
@@ -1058,6 +1089,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9C84AC902BAADE8F0029BA31 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseFirestoreCombine-Community";
+		};
+		9C84AC9B2BB447100029BA31 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C84AC902BAADE8F0029BA31 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 		9CBA452F2B960B0200951D93 /* ReactorKit */ = {
 			isa = XCSwiftPackageProductDependency;

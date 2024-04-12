@@ -7,8 +7,6 @@
 
 import Foundation
 import ReactorKit
-import FirebaseAuth
-import FirebaseFirestore
 
 class SignUpReactor : Reactor {
     enum Action {
@@ -30,16 +28,16 @@ class SignUpReactor : Reactor {
         print(action.self)
         switch action {
         case let .clickSignUpButton(name, email, password):
-            return registUser(email: email ?? "", password: password ?? "")
-                .flatMap { _ -> Observable<Mutation> in
+            return UserAPI().registUser(email: email ?? "", password: password ?? "")
+                .flatMap{ _ -> Observable<Mutation> in
                     let data = ["email": email ?? "", "username": name ?? "", "password": password ?? ""]
-                    return self.saveUserData(data: data)
-                        .map { _ in .registUser(true)}
+                    return UserAPI().saveUserData(data: data)
+                        .map{ _ in .registUser(true)}
                         .catchAndReturn(.registUser(false))
                 }
-        
+            
         case let .clickDuplicateCheckButton(email):
-            return checkForDuplicateEmail(email: email ?? "")
+            return UserAPI().checkForDuplicateEmail(email: email ?? "")
                 .map { Mutation.checkDuplicateId($0) }
                 .catchAndReturn(.checkDuplicateId(false))
         }
@@ -55,49 +53,5 @@ class SignUpReactor : Reactor {
         }
         
         return newState
-    }
-    
-    private func checkForDuplicateEmail(email: String) -> Observable<Bool> {
-            return Observable.create { observer in
-                Firestore.firestore().collection("user").whereField("email", isEqualTo: email).getDocuments { snapshot, error in
-                    if let error = error {
-                        observer.onError(error)
-                    } else {
-                        let isDuplicate = !(snapshot?.documents.isEmpty ?? false)
-                        observer.onNext(isDuplicate)
-                        observer.onCompleted()
-                    }
-                }
-                return Disposables.create()
-            }
-        }
-    
-    private func registUser(email: String, password: String) -> Observable<AuthDataResult> {
-        return Observable.create { observer in
-            Auth.auth().createUser(withEmail: email, password: password) { result, error in
-                if let error = error {
-                    observer.onError(error)
-                } else if let result = result {
-                    observer.onNext(result)
-                    observer.onCompleted()
-                }
-            }
-            
-            return Disposables.create()
-        }
-    }
-    
-    private func saveUserData(data: [String: Any]) -> Observable<Bool> {
-        return Observable.create { observer in
-            Firestore.firestore().collection("user").document().setData(data) { error in
-                if let error = error {
-                    observer.onError(error)
-                } else {
-                    observer.onNext(true)
-                    observer.onCompleted()
-                }
-            }
-            return Disposables.create()
-        }
     }
 }

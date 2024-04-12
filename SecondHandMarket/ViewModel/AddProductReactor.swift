@@ -8,26 +8,28 @@
 import Foundation
 
 import ReactorKit
+import FirebaseStorage
+import Firebase
 
 class AddProductReactor : Reactor {
     enum Action {
         case productNameChanged(String?)
         case priceChanged(String?)
         case contentsChanged(String?)
-        case clickAddButton(String?, String?, String?)
+        case clickAddButton(UIImage, String?, String?, String?)
     }
     enum Mutation {
         case setProductName(String?)
         case setPrice(String?)
         case setContents(String?)
-        case saveProductInformation(String?, String?, String?)
+        case saveProduct(Bool)
         
     }
     struct State {
         var productName: String? = ""
         var price: String? = ""
         var contents: String? = ""
-        var isSavedSuccess: Bool = false
+        var isSavedSuccess: Bool? = nil
     }
     
     var initialState: State = State()
@@ -40,8 +42,12 @@ class AddProductReactor : Reactor {
             return Observable.just(.setPrice(price))
         case .contentsChanged(let contents):
             return Observable.just(.setContents(contents))
-        case .clickAddButton(let pName, let price, let contents):
-            return Observable.just(.saveProductInformation(pName, price, contents))
+        case let.clickAddButton(image, pName, price, contents):
+            return saveProducet(image: image, pName: pName ?? "", price: price ?? "", contents: contents ?? "")
+                .map { _ in
+                        .saveProduct(true)
+                }
+                .catchAndReturn(.saveProduct(false))
         }
     }
     
@@ -54,32 +60,43 @@ class AddProductReactor : Reactor {
             newState.price = price
         case .setContents(let contents):
             newState.contents = contents
-        case .saveProductInformation(let pName, let price, let contents):
-            newState.isSavedSuccess = saveProduct(pName: pName ?? "", price: price ?? "", contents: contents ?? "")
+        case let.saveProduct(isSavedSuccess):
+            newState.isSavedSuccess = isSavedSuccess
         }
         
         return newState
     }
-    
-    private func saveProduct(pName: String, price: String, contents: String) -> Bool {
-        let newProduct = Product()
-        newProduct.pName = pName
-        newProduct.price = price
-        newProduct.contents = contents
+
+    private func saveProducet(image: UIImage, pName: String, price: String, contents: String) -> Observable<Bool> {
         
-        // Realm 저장
-        DataBaseManager.shared.saveProduct(product: newProduct)
-        
-        // 저장되었는지 확인하기
-        let dbProduct = DataBaseManager.shared.getProducts()
-        
-        let productInDB = dbProduct.filter { _ in pName == newProduct.pName }
-        if productInDB.first != nil {
-            print("저장된 제품 : \(productInDB)")
-            return true
-        } else {
-            print("저장 실패")
-            return false
+        return Observable.create { observer in
+            
+            guard let imageData = image.jpegData(compressionQuality: 0.5) else { return observer.onNext(false) as! Disposable }
+            let metaData = StorageMetadata()
+            let address = UserDefaults.standard.string(forKey: "Address") ?? ""
+            
+            
+            metaData.contentType = "image/jpeg"
+            
+            
+            metaData.customMetadata = ["name" : pName, "price" : price, "contents" : contents, "address" : address]
+            
+            let imageName = UUID().uuidString
+            let firebaseReference = Storage.storage().reference().child("\(imageName)")
+            
+            firebaseReference.putData(imageData, metadata: metaData) {
+                metaData, error in
+                
+                if let error = error {
+                    observer.onError(error)
+                } else {
+                    observer.onNext(true)
+                    observer.onCompleted()
+                }
+            }
+            return Disposables.create()
         }
+        
+        
     }
 }

@@ -20,8 +20,6 @@ class LocationReactor : Reactor {
     }
     
     struct State {
-//        var isSetLocationButtonClicked = false
-//        var isNextButtonClicked = false
         @Pulse var isSetLocationButtonClicked : Void? = nil
         @Pulse var isNextButtonClicked : Void? = nil
     }

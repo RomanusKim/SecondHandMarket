@@ -455,35 +455,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="물품 이름" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ts-dK-B5x">
-                                <rect key="frame" x="24" y="126.99999999999999" width="345" height="20.333333333333329"/>
+                                <rect key="frame" x="24" y="329" width="345" height="21"/>
                                 <fontDescription key="fontDescription" name="MaplestoryLight" family="Maplestory" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oO1-LM-Ppp">
-                                <rect key="frame" x="24" y="159.33333333333334" width="345" height="34"/>
+                                <rect key="frame" x="24" y="362" width="345" height="34"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가격" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNh-uu-Y4f">
-                                <rect key="frame" x="24" y="217.33333333333334" width="345" height="20.333333333333343"/>
+                                <rect key="frame" x="24" y="420" width="345" height="21"/>
                                 <fontDescription key="fontDescription" name="MaplestoryLight" family="Maplestory" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GVX-SY-lOA">
-                                <rect key="frame" x="24" y="249.66666666666663" width="345" height="34"/>
+                                <rect key="frame" x="24" y="453" width="345" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자세한 설명" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apc-HR-Bvx">
-                                <rect key="frame" x="24" y="307.66666666666669" width="345" height="20.333333333333314"/>
+                                <rect key="frame" x="24" y="511" width="345" height="21"/>
                                 <fontDescription key="fontDescription" name="MaplestoryLight" family="Maplestory" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3mQ-Sw-gHT">
-                                <rect key="frame" x="24" y="340" width="345" height="100"/>
+                                <rect key="frame" x="24" y="544" width="345" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="ru9-v0-Q3O"/>
@@ -492,6 +492,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CR0-Xj-guB">
+                                <rect key="frame" x="51.666666666666657" y="125" width="290" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="GIP-qM-aNx"/>
+                                    <constraint firstAttribute="height" constant="180" id="wI2-NA-PFj"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="T7l-T9-dZf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -501,14 +508,16 @@
                             <constraint firstItem="3mQ-Sw-gHT" firstAttribute="leading" secondItem="T7l-T9-dZf" secondAttribute="leading" constant="24" id="Bya-OD-pHr"/>
                             <constraint firstItem="apc-HR-Bvx" firstAttribute="top" secondItem="GVX-SY-lOA" secondAttribute="bottom" constant="24" id="CUy-d5-20H"/>
                             <constraint firstItem="T7l-T9-dZf" firstAttribute="trailing" secondItem="apc-HR-Bvx" secondAttribute="trailing" constant="24" id="FSp-gO-UMH"/>
+                            <constraint firstItem="7Ts-dK-B5x" firstAttribute="top" secondItem="T7l-T9-dZf" secondAttribute="top" constant="226" id="NrU-NS-VGQ"/>
                             <constraint firstItem="mNh-uu-Y4f" firstAttribute="leading" secondItem="T7l-T9-dZf" secondAttribute="leading" constant="24" id="TfC-om-bnt"/>
+                            <constraint firstItem="CR0-Xj-guB" firstAttribute="top" secondItem="T7l-T9-dZf" secondAttribute="top" constant="22" id="Ukl-23-e52"/>
                             <constraint firstItem="T7l-T9-dZf" firstAttribute="trailing" secondItem="oO1-LM-Ppp" secondAttribute="trailing" constant="24" id="ZRC-KQ-6r7"/>
                             <constraint firstItem="T7l-T9-dZf" firstAttribute="trailing" secondItem="3mQ-Sw-gHT" secondAttribute="trailing" constant="24" id="aQf-aS-xKi"/>
                             <constraint firstItem="oO1-LM-Ppp" firstAttribute="leading" secondItem="T7l-T9-dZf" secondAttribute="leading" constant="24" id="bS6-7C-T3J"/>
-                            <constraint firstItem="7Ts-dK-B5x" firstAttribute="top" secondItem="T7l-T9-dZf" secondAttribute="top" constant="24" id="cET-rQ-jFi"/>
                             <constraint firstItem="GVX-SY-lOA" firstAttribute="top" secondItem="mNh-uu-Y4f" secondAttribute="bottom" constant="12" id="cQI-ha-axa"/>
                             <constraint firstItem="oO1-LM-Ppp" firstAttribute="top" secondItem="7Ts-dK-B5x" secondAttribute="bottom" constant="12" id="f3A-hM-Itp"/>
                             <constraint firstItem="7Ts-dK-B5x" firstAttribute="leading" secondItem="T7l-T9-dZf" secondAttribute="leading" constant="24" id="gwE-uP-dGR"/>
+                            <constraint firstItem="CR0-Xj-guB" firstAttribute="centerX" secondItem="T7l-T9-dZf" secondAttribute="centerX" id="hS7-z8-cH1"/>
                             <constraint firstItem="GVX-SY-lOA" firstAttribute="leading" secondItem="T7l-T9-dZf" secondAttribute="leading" constant="24" id="oaB-at-Jzl"/>
                             <constraint firstItem="3mQ-Sw-gHT" firstAttribute="top" secondItem="apc-HR-Bvx" secondAttribute="bottom" constant="12" id="omR-Zf-sI0"/>
                             <constraint firstItem="T7l-T9-dZf" firstAttribute="trailing" secondItem="7Ts-dK-B5x" secondAttribute="trailing" constant="24" id="tkk-aH-2SK"/>
@@ -523,12 +532,13 @@
                         <outlet property="addButton" destination="jlZ-rp-xzL" id="Li9-tm-842"/>
                         <outlet property="contentsTextView" destination="3mQ-Sw-gHT" id="3Jz-y2-avy"/>
                         <outlet property="priceTextField" destination="GVX-SY-lOA" id="mme-lc-1Je"/>
+                        <outlet property="productImage" destination="CR0-Xj-guB" id="v59-23-TfT"/>
                         <outlet property="productNameTextField" destination="oO1-LM-Ppp" id="3oY-cQ-ShJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4J-zj-19d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4492" y="-651"/>
+            <point key="canvasLocation" x="4490.8396946564881" y="-651.4084507042254"/>
         </scene>
     </scenes>
     <resources>

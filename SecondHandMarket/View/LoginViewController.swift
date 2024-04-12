@@ -51,39 +51,24 @@ class LoginViewController : UIViewController, StoryboardView {
             .distinctUntilChanged()
             .filter { $0 != nil }
             .subscribe(onNext: { isLoginSuccess in
-                if isLoginSuccess ?? false { self.goToLocationViewController()
+                if isLoginSuccess ?? false {
+                    CommonUtility().goToViewController(
+                        identifier: "LocationViewController",
+                        navigationController: self.navigationController
+                    )
                 }
             }).disposed(by: disposeBag)
         
         reactor.state
             .map(\.isSignUpButtonClicked)
             .subscribe(onNext: { isSignUpButtonClicked in
-                if isSignUpButtonClicked { self.goToSignUpViewController() }
+                if isSignUpButtonClicked {
+                    CommonUtility().goToViewController(
+                        identifier: "SignUpViewController", 
+                        navigationController: self.navigationController
+                    )
+                }
             })
             .disposed(by: disposeBag)
-    }
-    
-    private func goToSignUpViewController() {
-        guard let signUpViewController = self.storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") else {
-            return
-        }
-        self.navigationController?.popToViewController(signUpViewController, animated: true)
-    }
-    
-    private func goToLocationViewController() {
-        let controllers = self.navigationController?.viewControllers
-        
-        guard let locationViewController =
-                self.storyboard?
-            .instantiateViewController(withIdentifier: "LocationViewController") else {
-            return
-        }
-        
-        for vc in controllers! {
-            if vc is LocationViewController {
-                _ = self.navigationController?.popToViewController(vc as! LocationViewController, animated: true)
-            }
-        }
-        
     }
 }
