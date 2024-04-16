@@ -41,7 +41,6 @@
 		9C84AC9E2BB459B30029BA31 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84AC9D2BB459B30029BA31 /* Product.swift */; };
 		9C84ACA12BC936660029BA31 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84ACA02BC936660029BA31 /* UserAPI.swift */; };
 		9C84ACA42BC93EEE0029BA31 /* CommonUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84ACA32BC93EEE0029BA31 /* CommonUtility.swift */; };
-		9C84ACA62BC948100029BA31 /* ProductAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84ACA52BC948100029BA31 /* ProductAPI.swift */; };
 		9C84ACA82BC948390029BA31 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84ACA72BC948390029BA31 /* BaseViewController.swift */; };
 		9CBA44F22B95CA8C00951D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA44F12B95CA8C00951D93 /* AppDelegate.swift */; };
 		9CBA44F42B95CA8C00951D93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA44F32B95CA8C00951D93 /* SceneDelegate.swift */; };
@@ -105,7 +104,6 @@
 		9C84AC9D2BB459B30029BA31 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		9C84ACA02BC936660029BA31 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		9C84ACA32BC93EEE0029BA31 /* CommonUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtility.swift; sourceTree = "<group>"; };
-		9C84ACA52BC948100029BA31 /* ProductAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAPI.swift; sourceTree = "<group>"; };
 		9C84ACA72BC948390029BA31 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9CBA44EE2B95CA8C00951D93 /* SecondHandMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondHandMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBA44F12B95CA8C00951D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -221,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				9C84ACA02BC936660029BA31 /* UserAPI.swift */,
-				9C84ACA52BC948100029BA31 /* ProductAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -629,7 +626,6 @@
 				9C84AC882BA3349F0029BA31 /* AddProductViewController.swift in Sources */,
 				9C5A9B0E2B98841200F94231 /* SignUpReactor.swift in Sources */,
 				9C5A9B0C2B987BC800F94231 /* SignUpViewController.swift in Sources */,
-				9C84ACA62BC948100029BA31 /* ProductAPI.swift in Sources */,
 				9C5A9B252B9F212900F94231 /* LocationViewController.swift in Sources */,
 				9C5A9B272B9F27BE00F94231 /* LocationReactor.swift in Sources */,
 				9C84AC842BA083080029BA31 /* HomeViewController.swift in Sources */,
