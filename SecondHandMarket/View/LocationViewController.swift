@@ -70,8 +70,8 @@ class LocationViewController : UIViewController, StoryboardView, ZipCodeDelegate
         
         reactor.pulse(\.$isNextButtonClicked)
             .compactMap { $0 }
-            .subscribe(onNext: { _ in
-                self.goToHomeViewController()
+            .subscribe(onNext: { [weak self] _ in
+                self?.navigationController?.goToViewController(identifier: "Home")
             })
             .disposed(by: disposeBag)
         
@@ -94,14 +94,5 @@ class LocationViewController : UIViewController, StoryboardView, ZipCodeDelegate
     
     func didReceive(address: String) {
         myAddressSubject.onNext(address)
-    }
-    
-    private func goToHomeViewController() {
-        guard let homeViewController =
-                self.storyboard?
-            .instantiateViewController(withIdentifier: "HomeViewController") else {
-            return
-        }
-        self.navigationController?.pushViewController(homeViewController, animated: true)
     }
 }

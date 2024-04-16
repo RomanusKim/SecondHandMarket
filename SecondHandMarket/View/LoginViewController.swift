@@ -50,23 +50,17 @@ class LoginViewController : UIViewController, StoryboardView {
             .map{$0.isLoginSuccess}
             .distinctUntilChanged()
             .filter { $0 != nil }
-            .subscribe(onNext: { isLoginSuccess in
+            .subscribe(onNext: { [weak self] isLoginSuccess in
                 if isLoginSuccess ?? false {
-                    CommonUtility().goToViewController(
-                        identifier: "LocationViewController",
-                        navigationController: self.navigationController
-                    )
+                    self?.navigationController?.goToViewController(identifier: "Location")
                 }
             }).disposed(by: disposeBag)
         
         reactor.state
             .map(\.isSignUpButtonClicked)
-            .subscribe(onNext: { isSignUpButtonClicked in
+            .subscribe(onNext: { [weak self] isSignUpButtonClicked in
                 if isSignUpButtonClicked {
-                    CommonUtility().goToViewController(
-                        identifier: "SignUpViewController", 
-                        navigationController: self.navigationController
-                    )
+                    self?.navigationController?.goToViewController(identifier: "SignUp")
                 }
             })
             .disposed(by: disposeBag)

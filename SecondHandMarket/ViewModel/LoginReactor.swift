@@ -28,7 +28,7 @@ class LoginReactor : Reactor {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
         case let .clickLogin(email, password):
-            return UserAPI().loginIn(email: email ?? "", password: password ?? "")
+            return UserAPI.shared.loginIn(email: email ?? "", password: password ?? "")
                 .map{ Mutation.login($0) }
                 .catchAndReturn(.login(false))
         case .clickSignUpButton:

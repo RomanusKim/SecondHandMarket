@@ -74,11 +74,11 @@ class SignUpViewController : UIViewController, StoryboardView {
             .map(\.isRegistSuccess)
             .distinctUntilChanged()
             .filter { $0 != nil }
-            .subscribe(onNext: { isRegistSuccess in
+            .subscribe(onNext: { [weak self] isRegistSuccess in
                 if isRegistSuccess ?? false {
-                    self.navigationController?.popViewController(animated: true)
+                    self?.navigationController?.popViewController(animated: true)
                 } else {
-                    self.showMessage(title: "알림", body: "회원가입 실패")
+                    self?.showMessage(title: "알림", body: "회원가입 실패")
                 }
             })
             .disposed(by: disposeBag)
@@ -98,6 +98,7 @@ class SignUpViewController : UIViewController, StoryboardView {
 
     }
     
+    // CommonUtility로 옮기기
     private func showMessage(title: String, body: String) {
         let message = MessageView.viewFromNib(layout: .cardView)
         message.configureTheme(.info)

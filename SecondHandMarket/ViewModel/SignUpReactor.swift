@@ -28,7 +28,7 @@ class SignUpReactor : Reactor {
         print(action.self)
         switch action {
         case let .clickSignUpButton(name, email, password):
-            return UserAPI().registUser(email: email ?? "", password: password ?? "")
+            return UserAPI.shared.registUser(email: email ?? "", password: password ?? "")
                 .flatMap{ _ -> Observable<Mutation> in
                     let data = ["email": email ?? "", "username": name ?? "", "password": password ?? ""]
                     return UserAPI().saveUserData(data: data)
@@ -37,7 +37,7 @@ class SignUpReactor : Reactor {
                 }
             
         case let .clickDuplicateCheckButton(email):
-            return UserAPI().checkForDuplicateEmail(email: email ?? "")
+            return UserAPI.shared.checkForDuplicateEmail(email: email ?? "")
                 .map { Mutation.checkDuplicateId($0) }
                 .catchAndReturn(.checkDuplicateId(false))
         }
