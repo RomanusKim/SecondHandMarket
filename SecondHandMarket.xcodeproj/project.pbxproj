@@ -24,7 +24,6 @@
 		9C5A9B212B9F205300F94231 /* location.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C5A9B202B9F205300F94231 /* location.json */; };
 		9C5A9B252B9F212900F94231 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A9B242B9F212900F94231 /* LocationViewController.swift */; };
 		9C5A9B272B9F27BE00F94231 /* LocationReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A9B262B9F27BE00F94231 /* LocationReactor.swift */; };
-		9C5A9B292B9F30E100F94231 /* NaverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A9B282B9F30E100F94231 /* NaverMapViewController.swift */; };
 		9C5A9B2B2BA060A200F94231 /* ZipCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A9B2A2BA060A200F94231 /* ZipCodeViewController.swift */; };
 		9C84AC842BA083080029BA31 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84AC832BA083080029BA31 /* HomeViewController.swift */; };
 		9C84AC862BA32F520029BA31 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84AC852BA32F520029BA31 /* ProductCell.swift */; };
@@ -92,7 +91,6 @@
 		9C5A9B202B9F205300F94231 /* location.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = location.json; sourceTree = "<group>"; };
 		9C5A9B242B9F212900F94231 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		9C5A9B262B9F27BE00F94231 /* LocationReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationReactor.swift; sourceTree = "<group>"; };
-		9C5A9B282B9F30E100F94231 /* NaverMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMapViewController.swift; sourceTree = "<group>"; };
 		9C5A9B2A2BA060A200F94231 /* ZipCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeViewController.swift; sourceTree = "<group>"; };
 		9C84AC832BA083080029BA31 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9C84AC852BA32F520029BA31 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
@@ -187,7 +185,6 @@
 				9C457B202B961CB700311DB9 /* LoginViewController.swift */,
 				9C5A9B0B2B987BC800F94231 /* SignUpViewController.swift */,
 				9C5A9B242B9F212900F94231 /* LocationViewController.swift */,
-				9C5A9B282B9F30E100F94231 /* NaverMapViewController.swift */,
 				9C5A9B2A2BA060A200F94231 /* ZipCodeViewController.swift */,
 				9C84AC832BA083080029BA31 /* HomeViewController.swift */,
 				9C84AC852BA32F520029BA31 /* ProductCell.swift */,
@@ -608,7 +605,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C5A9B292B9F30E100F94231 /* NaverMapViewController.swift in Sources */,
 				9C5A9B2B2BA060A200F94231 /* ZipCodeViewController.swift in Sources */,
 				9CBA44F22B95CA8C00951D93 /* AppDelegate.swift in Sources */,
 				9C84ACA12BC936660029BA31 /* UserAPI.swift in Sources */,
