@@ -6,137 +6,66 @@
 	objectVersion = 56;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		72E614C823EA09AB1AAE80D5CD8A4C58 /* NMapsGeometry */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = EB98AD101AB530610FAEE48FABDF7F57 /* Build configuration list for PBXAggregateTarget "NMapsGeometry" */;
-			buildPhases = (
-				06DEA16D4139F67FC0E17642FDBEECD0 /* [CP] Copy XCFrameworks */,
-			);
-			dependencies = (
-			);
-			name = NMapsGeometry;
-			productName = NMapsGeometry;
-		};
-		8E049F5F4E3BDC647F924FEF22D49D90 /* NMapsMap */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 73E737D5F21341C24A13EBC70CD8D471 /* Build configuration list for PBXAggregateTarget "NMapsMap" */;
-			buildPhases = (
-				B521269790554904B95202DE2D5AC59C /* [CP] Copy XCFrameworks */,
-			);
-			dependencies = (
-			);
-			name = NMapsMap;
-			productName = NMapsMap;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		0A52E729B3685A35EB40F8B398376FC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		2A18B7DF704C228E4C9A0B4FBB37D3DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		40DA9C18CB10171C26D0E7795E57AE92 /* Pods-SecondHandMarket-SecondHandMarketUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9858EA55085902BC5A9C2E38718B835C /* Pods-SecondHandMarket-SecondHandMarketUITests-dummy.m */; };
-		55E554A65C158F51DBE51FC5FF658177 /* Pods-SecondHandMarketTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F17C6903DD524BE3F785FA5FBB0C60A /* Pods-SecondHandMarketTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		580A8C00CCAF8BE69B9CDDDB701A8CC3 /* Pods-SecondHandMarket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FCBAF90285AF435C2E1F269398328A4 /* Pods-SecondHandMarket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E54930E0377278BB80BB74A148F52DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A4534DF29335C65CB431CBCF511682A6 /* Pods-SecondHandMarket-SecondHandMarketUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B5E932D002A6409E40011DEAD752AF0 /* Pods-SecondHandMarket-SecondHandMarketUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C84FADF3698094F9CFC537720A3F3498 /* Pods-SecondHandMarket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EFAF6B47F99A5DAD51CF953F29A3A4 /* Pods-SecondHandMarket-dummy.m */; };
-		E0869A3E6780B6D922D758282377EDE7 /* Pods-SecondHandMarketTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B9D10AD0A2E670D69E83C96772D7EC /* Pods-SecondHandMarketTests-dummy.m */; };
+		55E554A65C158F51DBE51FC5FF658177 /* Pods-SecondHandMarketTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CD7B418D3DB3ED5915E0311D367FE3B /* Pods-SecondHandMarketTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DD2C46F667456A8A1740D4146917F50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6DE8BD9470B7A8DA1CD0F6CCD0487905 /* Pods-SecondHandMarket-SecondHandMarketUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C421CA289588C0F9420CEA958CB5FC4C /* Pods-SecondHandMarket-SecondHandMarketUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E57B56C4A9190DD81D5709A5FD8B477 /* Pods-SecondHandMarket-SecondHandMarketUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D8D7DFFD3C361748470510FFA053BB /* Pods-SecondHandMarket-SecondHandMarketUITests-dummy.m */; };
+		B82A163AB36C5C180AD258F51D2DBC38 /* Pods-SecondHandMarket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA7A0A82F3F3E4031F4CC69AC5F299 /* Pods-SecondHandMarket-dummy.m */; };
+		B9ED4C1751C6DAD4ACC50501E717A3ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D0177780B899FF9A12C28962744F3F9F /* Pods-SecondHandMarket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 176B63994C910BEEECA460357FFA1935 /* Pods-SecondHandMarket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0869A3E6780B6D922D758282377EDE7 /* Pods-SecondHandMarketTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8E2ED0CFA6FF6605B996EA201870B0 /* Pods-SecondHandMarketTests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A77142BA60AF62E8D3AE7139650E6D7B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8E049F5F4E3BDC647F924FEF22D49D90;
-			remoteInfo = NMapsMap;
-		};
-		D1C8B980ED0E8095B23972488F8554EB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8E049F5F4E3BDC647F924FEF22D49D90;
-			remoteInfo = NMapsMap;
-		};
-		E4F70F82F1910BE5CDA7B508D3A9A326 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 72E614C823EA09AB1AAE80D5CD8A4C58;
-			remoteInfo = NMapsGeometry;
-		};
-		EEBCE93C1A9019CBD14A1CFCB3E6DB05 /* PBXContainerItemProxy */ = {
+		D8EE0F420E3360AD901B2A722D0BA6E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5C13849A3C781372F8A4CC16AA6DAA63;
 			remoteInfo = "Pods-SecondHandMarket";
 		};
-		F1A040D7510028E47D2B68DA7355B031 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 72E614C823EA09AB1AAE80D5CD8A4C58;
-			remoteInfo = NMapsGeometry;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0970046F7060534BA9B286629593DA0C /* NMapsMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NMapsMap.debug.xcconfig; sourceTree = "<group>"; };
-		0F17C6903DD524BE3F785FA5FBB0C60A /* Pods-SecondHandMarketTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SecondHandMarketTests-umbrella.h"; sourceTree = "<group>"; };
-		0F618005B1538D1E173103AFD38C13F9 /* Pods-SecondHandMarket-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SecondHandMarket-acknowledgements.plist"; sourceTree = "<group>"; };
-		139C4653224E3DFF7814C50BC5BAF2AF /* Pods-SecondHandMarketTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SecondHandMarketTests.modulemap"; sourceTree = "<group>"; };
-		1A326C79B1B897CBCFDC36BFF5174A43 /* NMapsGeometry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NMapsGeometry.debug.xcconfig; sourceTree = "<group>"; };
-		2FBD7EEB23B0F04EE02BED4DA803503C /* Pods-SecondHandMarket-SecondHandMarketUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SecondHandMarket-SecondHandMarketUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		36F87324F95B8581CF2E71627CDEFD13 /* Pods-SecondHandMarket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SecondHandMarket.modulemap"; sourceTree = "<group>"; };
-		3C1A8CF17A308DEDFCF007C0888C5775 /* Pods-SecondHandMarket-SecondHandMarketUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SecondHandMarket-SecondHandMarketUITests-Info.plist"; sourceTree = "<group>"; };
-		3FCBAF90285AF435C2E1F269398328A4 /* Pods-SecondHandMarket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SecondHandMarket-umbrella.h"; sourceTree = "<group>"; };
-		485FAE6318CCD7779377C7AA4A7B3528 /* NMapsGeometry.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = NMapsGeometry.xcframework; path = framework/NMapsGeometry.xcframework; sourceTree = "<group>"; };
-		4F0C55D25B9900DE7936740E68EFDFCF /* NMapsMap.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = NMapsMap.xcframework; path = framework/NMapsMap.xcframework; sourceTree = "<group>"; };
-		53BB18D8DE6118DEC0AAC01027DBECA8 /* NMapsMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NMapsMap.release.xcconfig; sourceTree = "<group>"; };
-		5C3C3EDF7380B2EAA3B43DBC6152E0C3 /* Pods-SecondHandMarket-SecondHandMarketUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SecondHandMarket-SecondHandMarketUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		6678B7B84DCB1A5CF42CEC210C7F3617 /* Pods-SecondHandMarketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SecondHandMarketTests.release.xcconfig"; sourceTree = "<group>"; };
-		6765B54AEAE5BDBABCBB1BBA32BCEEA4 /* Pods-SecondHandMarketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SecondHandMarketTests.debug.xcconfig"; sourceTree = "<group>"; };
+		143620799FB58FE6E22CE1252A49C918 /* Pods-SecondHandMarketTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SecondHandMarketTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		176B63994C910BEEECA460357FFA1935 /* Pods-SecondHandMarket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SecondHandMarket-umbrella.h"; sourceTree = "<group>"; };
+		196319276F8B85355F8AC2EBF1D7FD97 /* Pods-SecondHandMarket-SecondHandMarketUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SecondHandMarket-SecondHandMarketUITests.release.xcconfig"; sourceTree = "<group>"; };
+		278748281F09C8F43863F323C4E95221 /* Pods-SecondHandMarketTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SecondHandMarketTests-Info.plist"; sourceTree = "<group>"; };
+		2DBA7A0A82F3F3E4031F4CC69AC5F299 /* Pods-SecondHandMarket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SecondHandMarket-dummy.m"; sourceTree = "<group>"; };
+		4D959A0B05C09F8B97FD7E7A7BF3F356 /* Pods-SecondHandMarketTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SecondHandMarketTests.modulemap"; sourceTree = "<group>"; };
+		54FF6C50CCB4BF7A348B3C4963ADCEB7 /* Pods-SecondHandMarket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SecondHandMarket-Info.plist"; sourceTree = "<group>"; };
+		557B4A5619FDD0DB0BF1D2FA87A5B429 /* Pods-SecondHandMarketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SecondHandMarketTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5CD7B418D3DB3ED5915E0311D367FE3B /* Pods-SecondHandMarketTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SecondHandMarketTests-umbrella.h"; sourceTree = "<group>"; };
+		5E24C1724BADBB9C26BD4BE4440623F8 /* Pods-SecondHandMarket-SecondHandMarketUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SecondHandMarket-SecondHandMarketUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6F52594BADCE029BFB901FE08E223D25 /* Pods-SecondHandMarket */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SecondHandMarket"; path = Pods_SecondHandMarket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		716B410AD9C8F692220AD3856619B209 /* Pods-SecondHandMarketTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SecondHandMarketTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		75F7734599CD1A0DE3C607CCB3ABBE77 /* Pods-SecondHandMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SecondHandMarket.release.xcconfig"; sourceTree = "<group>"; };
-		7632854CF256B4EB3159C67C8B4CC71C /* Pods-SecondHandMarket-SecondHandMarketUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SecondHandMarket-SecondHandMarketUITests.modulemap"; sourceTree = "<group>"; };
-		790A7962A8A0DD53E45E05EA34FC3DFD /* Pods-SecondHandMarketTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SecondHandMarketTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7EF9C624FB68808BD7B9223C2D05CFB5 /* Pods-SecondHandMarketTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SecondHandMarketTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7F89040B8DC7FC773592AA5FE110E9DF /* NMapsGeometry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NMapsGeometry.release.xcconfig; sourceTree = "<group>"; };
-		8B5E932D002A6409E40011DEAD752AF0 /* Pods-SecondHandMarket-SecondHandMarketUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SecondHandMarket-SecondHandMarketUITests-umbrella.h"; sourceTree = "<group>"; };
-		911E90D41937D80DFB74F41F40E18637 /* Pods-SecondHandMarketTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SecondHandMarketTests-Info.plist"; sourceTree = "<group>"; };
-		983FCEF2808419DF12F69DFEBD7685D4 /* NMapsMap-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "NMapsMap-xcframeworks.sh"; sourceTree = "<group>"; };
-		9858EA55085902BC5A9C2E38718B835C /* Pods-SecondHandMarket-SecondHandMarketUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SecondHandMarket-SecondHandMarketUITests-dummy.m"; sourceTree = "<group>"; };
+		7A2C6237C10AA909910E1AA7AF15239D /* Pods-SecondHandMarket-SecondHandMarketUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SecondHandMarket-SecondHandMarketUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7ED5002C38EE0FC2D1A386A9B62D99AA /* Pods-SecondHandMarket-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SecondHandMarket-acknowledgements.plist"; sourceTree = "<group>"; };
+		9612AB21CBB1C41AF0D97A53D3C5E616 /* Pods-SecondHandMarket-SecondHandMarketUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SecondHandMarket-SecondHandMarketUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9BDEA3C19746F8CD69270B904AFD12E4 /* Pods-SecondHandMarket-SecondHandMarketUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SecondHandMarket-SecondHandMarketUITests"; path = Pods_SecondHandMarket_SecondHandMarketUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A7C96C780FE2567AF5F7FD333F31F0F0 /* Pods-SecondHandMarket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SecondHandMarket-Info.plist"; sourceTree = "<group>"; };
-		B4AD0071067CC6C16A83322F9816F177 /* Pods-SecondHandMarket-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SecondHandMarket-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BF2F533C189FF814D56FC923AB6D05F0 /* Pods-SecondHandMarket-SecondHandMarketUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SecondHandMarket-SecondHandMarketUITests-frameworks.sh"; sourceTree = "<group>"; };
-		C2EFAF6B47F99A5DAD51CF953F29A3A4 /* Pods-SecondHandMarket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SecondHandMarket-dummy.m"; sourceTree = "<group>"; };
-		CB8E14A18CEBC17E29F2673A3194BBAD /* Pods-SecondHandMarket-SecondHandMarketUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SecondHandMarket-SecondHandMarketUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D6AD169FE1DEA9A7E9B9A66003AEA30C /* Pods-SecondHandMarket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SecondHandMarket.debug.xcconfig"; sourceTree = "<group>"; };
-		D9B9D10AD0A2E670D69E83C96772D7EC /* Pods-SecondHandMarketTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SecondHandMarketTests-dummy.m"; sourceTree = "<group>"; };
-		E101130795B024FC83E4F774AA209B18 /* NMapsGeometry-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "NMapsGeometry-xcframeworks.sh"; sourceTree = "<group>"; };
-		E486E30765C8751DD51CA390C44D25E4 /* Pods-SecondHandMarket-SecondHandMarketUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SecondHandMarket-SecondHandMarketUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E95ED23B24F618B036D661A8CDF07F3 /* Pods-SecondHandMarket-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SecondHandMarket-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A84745C80F6126F18AF7268E990FE0DA /* Pods-SecondHandMarketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SecondHandMarketTests.release.xcconfig"; sourceTree = "<group>"; };
+		B60164ECEBDCEB627DA0D3EA79A47881 /* Pods-SecondHandMarket-SecondHandMarketUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SecondHandMarket-SecondHandMarketUITests.modulemap"; sourceTree = "<group>"; };
+		B87E060E642331BFEC1FEA1AB03E2435 /* Pods-SecondHandMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SecondHandMarket.release.xcconfig"; sourceTree = "<group>"; };
+		BCFB87A4A925DC269611B2A3468ED540 /* Pods-SecondHandMarket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SecondHandMarket.debug.xcconfig"; sourceTree = "<group>"; };
+		C421CA289588C0F9420CEA958CB5FC4C /* Pods-SecondHandMarket-SecondHandMarketUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SecondHandMarket-SecondHandMarketUITests-umbrella.h"; sourceTree = "<group>"; };
+		D8C86EC8710ADD9AC13A8A1A73042450 /* Pods-SecondHandMarket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SecondHandMarket.modulemap"; sourceTree = "<group>"; };
+		E0404867E291277EC11D888ACCD15800 /* Pods-SecondHandMarket-SecondHandMarketUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SecondHandMarket-SecondHandMarketUITests-Info.plist"; sourceTree = "<group>"; };
+		E2D8D7DFFD3C361748470510FFA053BB /* Pods-SecondHandMarket-SecondHandMarketUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SecondHandMarket-SecondHandMarketUITests-dummy.m"; sourceTree = "<group>"; };
 		E8DA68090CC14EEAA69F6A723D0A4353 /* Pods-SecondHandMarketTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SecondHandMarketTests"; path = Pods_SecondHandMarketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFB390FF0D4D19B491B02D77F96C7333 /* Pods-SecondHandMarket-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SecondHandMarket-frameworks.sh"; sourceTree = "<group>"; };
+		EF8E2ED0CFA6FF6605B996EA201870B0 /* Pods-SecondHandMarketTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SecondHandMarketTests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		09FD6CDCCBE0AD3D502F5EA05CF30951 /* Frameworks */ = {
+		20C85EAC1BC675DFF68E9536B05A5376 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E54930E0377278BB80BB74A148F52DE /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		24EC8E02C031CE404BA2EDD70896980C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2A18B7DF704C228E4C9A0B4FBB37D3DF /* Foundation.framework in Frameworks */,
+				6DD2C46F667456A8A1740D4146917F50 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,70 +77,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		767BCB3333F1E9E6A6DEF03A8FF0FB8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9ED4C1751C6DAD4ACC50501E717A3ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		169A894F474781F666BE8D90408D3828 /* Support Files */ = {
+		2D19726402225C2A0261B9633496FC76 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E101130795B024FC83E4F774AA209B18 /* NMapsGeometry-xcframeworks.sh */,
-				1A326C79B1B897CBCFDC36BFF5174A43 /* NMapsGeometry.debug.xcconfig */,
-				7F89040B8DC7FC773592AA5FE110E9DF /* NMapsGeometry.release.xcconfig */,
+				40102F85769FDCEEEFC8274CF58111DD /* Pods-SecondHandMarket */,
+				80F39A2F8C7ECD2E59F257F2E91AFA9B /* Pods-SecondHandMarket-SecondHandMarketUITests */,
+				2DA2CC68CCC7C4CE1F765D136B7F2D06 /* Pods-SecondHandMarketTests */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/NMapsGeometry";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		25B56312D79088C322C5B52238334BCC /* Pods */ = {
+		2DA2CC68CCC7C4CE1F765D136B7F2D06 /* Pods-SecondHandMarketTests */ = {
 			isa = PBXGroup;
 			children = (
-				2FE65985C01476131D3AC219F92CC3CF /* NMapsGeometry */,
-				487B37947971C0C75B135158191A5547 /* NMapsMap */,
+				4D959A0B05C09F8B97FD7E7A7BF3F356 /* Pods-SecondHandMarketTests.modulemap */,
+				716B410AD9C8F692220AD3856619B209 /* Pods-SecondHandMarketTests-acknowledgements.markdown */,
+				143620799FB58FE6E22CE1252A49C918 /* Pods-SecondHandMarketTests-acknowledgements.plist */,
+				EF8E2ED0CFA6FF6605B996EA201870B0 /* Pods-SecondHandMarketTests-dummy.m */,
+				278748281F09C8F43863F323C4E95221 /* Pods-SecondHandMarketTests-Info.plist */,
+				5CD7B418D3DB3ED5915E0311D367FE3B /* Pods-SecondHandMarketTests-umbrella.h */,
+				557B4A5619FDD0DB0BF1D2FA87A5B429 /* Pods-SecondHandMarketTests.debug.xcconfig */,
+				A84745C80F6126F18AF7268E990FE0DA /* Pods-SecondHandMarketTests.release.xcconfig */,
 			);
-			name = Pods;
+			name = "Pods-SecondHandMarketTests";
+			path = "Target Support Files/Pods-SecondHandMarketTests";
 			sourceTree = "<group>";
 		};
-		29C351E0D9979E1F6B2040A6570791B3 /* Pods-SecondHandMarket */ = {
+		40102F85769FDCEEEFC8274CF58111DD /* Pods-SecondHandMarket */ = {
 			isa = PBXGroup;
 			children = (
-				36F87324F95B8581CF2E71627CDEFD13 /* Pods-SecondHandMarket.modulemap */,
-				B4AD0071067CC6C16A83322F9816F177 /* Pods-SecondHandMarket-acknowledgements.markdown */,
-				0F618005B1538D1E173103AFD38C13F9 /* Pods-SecondHandMarket-acknowledgements.plist */,
-				C2EFAF6B47F99A5DAD51CF953F29A3A4 /* Pods-SecondHandMarket-dummy.m */,
-				FFB390FF0D4D19B491B02D77F96C7333 /* Pods-SecondHandMarket-frameworks.sh */,
-				A7C96C780FE2567AF5F7FD333F31F0F0 /* Pods-SecondHandMarket-Info.plist */,
-				3FCBAF90285AF435C2E1F269398328A4 /* Pods-SecondHandMarket-umbrella.h */,
-				D6AD169FE1DEA9A7E9B9A66003AEA30C /* Pods-SecondHandMarket.debug.xcconfig */,
-				75F7734599CD1A0DE3C607CCB3ABBE77 /* Pods-SecondHandMarket.release.xcconfig */,
+				D8C86EC8710ADD9AC13A8A1A73042450 /* Pods-SecondHandMarket.modulemap */,
+				9E95ED23B24F618B036D661A8CDF07F3 /* Pods-SecondHandMarket-acknowledgements.markdown */,
+				7ED5002C38EE0FC2D1A386A9B62D99AA /* Pods-SecondHandMarket-acknowledgements.plist */,
+				2DBA7A0A82F3F3E4031F4CC69AC5F299 /* Pods-SecondHandMarket-dummy.m */,
+				54FF6C50CCB4BF7A348B3C4963ADCEB7 /* Pods-SecondHandMarket-Info.plist */,
+				176B63994C910BEEECA460357FFA1935 /* Pods-SecondHandMarket-umbrella.h */,
+				BCFB87A4A925DC269611B2A3468ED540 /* Pods-SecondHandMarket.debug.xcconfig */,
+				B87E060E642331BFEC1FEA1AB03E2435 /* Pods-SecondHandMarket.release.xcconfig */,
 			);
 			name = "Pods-SecondHandMarket";
 			path = "Target Support Files/Pods-SecondHandMarket";
-			sourceTree = "<group>";
-		};
-		2ED541A35C7BD1778556550CF4846D2F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4F0C55D25B9900DE7936740E68EFDFCF /* NMapsMap.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2FE65985C01476131D3AC219F92CC3CF /* NMapsGeometry */ = {
-			isa = PBXGroup;
-			children = (
-				DC955F600E602E5041F1000DC79753BB /* Frameworks */,
-				169A894F474781F666BE8D90408D3828 /* Support Files */,
-			);
-			path = NMapsGeometry;
-			sourceTree = "<group>";
-		};
-		487B37947971C0C75B135158191A5547 /* NMapsMap */ = {
-			isa = PBXGroup;
-			children = (
-				2ED541A35C7BD1778556550CF4846D2F /* Frameworks */,
-				A3E28C362EAC5C5A2CCC22EE5E2FDA30 /* Support Files */,
-			);
-			path = NMapsMap;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -222,31 +138,20 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6D43B60DB540BA7720DA71CD07BF8FE1 /* Pods-SecondHandMarket-SecondHandMarketUITests */ = {
+		80F39A2F8C7ECD2E59F257F2E91AFA9B /* Pods-SecondHandMarket-SecondHandMarketUITests */ = {
 			isa = PBXGroup;
 			children = (
-				7632854CF256B4EB3159C67C8B4CC71C /* Pods-SecondHandMarket-SecondHandMarketUITests.modulemap */,
-				2FBD7EEB23B0F04EE02BED4DA803503C /* Pods-SecondHandMarket-SecondHandMarketUITests-acknowledgements.markdown */,
-				CB8E14A18CEBC17E29F2673A3194BBAD /* Pods-SecondHandMarket-SecondHandMarketUITests-acknowledgements.plist */,
-				9858EA55085902BC5A9C2E38718B835C /* Pods-SecondHandMarket-SecondHandMarketUITests-dummy.m */,
-				BF2F533C189FF814D56FC923AB6D05F0 /* Pods-SecondHandMarket-SecondHandMarketUITests-frameworks.sh */,
-				3C1A8CF17A308DEDFCF007C0888C5775 /* Pods-SecondHandMarket-SecondHandMarketUITests-Info.plist */,
-				8B5E932D002A6409E40011DEAD752AF0 /* Pods-SecondHandMarket-SecondHandMarketUITests-umbrella.h */,
-				5C3C3EDF7380B2EAA3B43DBC6152E0C3 /* Pods-SecondHandMarket-SecondHandMarketUITests.debug.xcconfig */,
-				E486E30765C8751DD51CA390C44D25E4 /* Pods-SecondHandMarket-SecondHandMarketUITests.release.xcconfig */,
+				B60164ECEBDCEB627DA0D3EA79A47881 /* Pods-SecondHandMarket-SecondHandMarketUITests.modulemap */,
+				5E24C1724BADBB9C26BD4BE4440623F8 /* Pods-SecondHandMarket-SecondHandMarketUITests-acknowledgements.markdown */,
+				9612AB21CBB1C41AF0D97A53D3C5E616 /* Pods-SecondHandMarket-SecondHandMarketUITests-acknowledgements.plist */,
+				E2D8D7DFFD3C361748470510FFA053BB /* Pods-SecondHandMarket-SecondHandMarketUITests-dummy.m */,
+				E0404867E291277EC11D888ACCD15800 /* Pods-SecondHandMarket-SecondHandMarketUITests-Info.plist */,
+				C421CA289588C0F9420CEA958CB5FC4C /* Pods-SecondHandMarket-SecondHandMarketUITests-umbrella.h */,
+				7A2C6237C10AA909910E1AA7AF15239D /* Pods-SecondHandMarket-SecondHandMarketUITests.debug.xcconfig */,
+				196319276F8B85355F8AC2EBF1D7FD97 /* Pods-SecondHandMarket-SecondHandMarketUITests.release.xcconfig */,
 			);
 			name = "Pods-SecondHandMarket-SecondHandMarketUITests";
 			path = "Target Support Files/Pods-SecondHandMarket-SecondHandMarketUITests";
-			sourceTree = "<group>";
-		};
-		94EF03449B64FDBEF7D997B553119111 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				29C351E0D9979E1F6B2040A6570791B3 /* Pods-SecondHandMarket */,
-				6D43B60DB540BA7720DA71CD07BF8FE1 /* Pods-SecondHandMarket-SecondHandMarketUITests */,
-				F6FE704AF53CE40FC63FEA2872D9D7DE /* Pods-SecondHandMarketTests */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		9A932C7C200AD475AFB7BD8C97014BDC /* Products */ = {
@@ -259,25 +164,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A3E28C362EAC5C5A2CCC22EE5E2FDA30 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				983FCEF2808419DF12F69DFEBD7685D4 /* NMapsMap-xcframeworks.sh */,
-				0970046F7060534BA9B286629593DA0C /* NMapsMap.debug.xcconfig */,
-				53BB18D8DE6118DEC0AAC01027DBECA8 /* NMapsMap.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/NMapsMap";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				25B56312D79088C322C5B52238334BCC /* Pods */,
 				9A932C7C200AD475AFB7BD8C97014BDC /* Products */,
-				94EF03449B64FDBEF7D997B553119111 /* Targets Support Files */,
+				2D19726402225C2A0261B9633496FC76 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -289,41 +182,9 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DC955F600E602E5041F1000DC79753BB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				485FAE6318CCD7779377C7AA4A7B3528 /* NMapsGeometry.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F6FE704AF53CE40FC63FEA2872D9D7DE /* Pods-SecondHandMarketTests */ = {
-			isa = PBXGroup;
-			children = (
-				139C4653224E3DFF7814C50BC5BAF2AF /* Pods-SecondHandMarketTests.modulemap */,
-				790A7962A8A0DD53E45E05EA34FC3DFD /* Pods-SecondHandMarketTests-acknowledgements.markdown */,
-				7EF9C624FB68808BD7B9223C2D05CFB5 /* Pods-SecondHandMarketTests-acknowledgements.plist */,
-				D9B9D10AD0A2E670D69E83C96772D7EC /* Pods-SecondHandMarketTests-dummy.m */,
-				911E90D41937D80DFB74F41F40E18637 /* Pods-SecondHandMarketTests-Info.plist */,
-				0F17C6903DD524BE3F785FA5FBB0C60A /* Pods-SecondHandMarketTests-umbrella.h */,
-				6765B54AEAE5BDBABCBB1BBA32BCEEA4 /* Pods-SecondHandMarketTests.debug.xcconfig */,
-				6678B7B84DCB1A5CF42CEC210C7F3617 /* Pods-SecondHandMarketTests.release.xcconfig */,
-			);
-			name = "Pods-SecondHandMarketTests";
-			path = "Target Support Files/Pods-SecondHandMarketTests";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0C0B011F70F3E16D6C7ABC421AE62012 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4534DF29335C65CB431CBCF511682A6 /* Pods-SecondHandMarket-SecondHandMarketUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0FD67CDB1D22824A628ABF10CE244C45 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,11 +193,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3964E82F36F067E1FA1AD5A0A94A34B /* Headers */ = {
+		A120388E5F91B916E2D0965CC9A3A45A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				580A8C00CCAF8BE69B9CDDDB701A8CC3 /* Pods-SecondHandMarket-umbrella.h in Headers */,
+				6DE8BD9470B7A8DA1CD0F6CCD0487905 /* Pods-SecondHandMarket-SecondHandMarketUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD39DA1546DD4070E8516A8885A9D1FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0177780B899FF9A12C28962744F3F9F /* Pods-SecondHandMarket-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +224,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				8236C72991E4FAF0AAB570D74E7E8B21 /* PBXTargetDependency */,
+				C8FDB0B518556E84F5399710E9BA834F /* PBXTargetDependency */,
 			);
 			name = "Pods-SecondHandMarketTests";
 			productName = Pods_SecondHandMarketTests;
@@ -364,18 +233,16 @@
 		};
 		5C13849A3C781372F8A4CC16AA6DAA63 /* Pods-SecondHandMarket */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 055C8A3AFCFC15DD065E17F26187D11E /* Build configuration list for PBXNativeTarget "Pods-SecondHandMarket" */;
+			buildConfigurationList = C77C1019B24EB0EDBDD2AC9D7B64EECC /* Build configuration list for PBXNativeTarget "Pods-SecondHandMarket" */;
 			buildPhases = (
-				C3964E82F36F067E1FA1AD5A0A94A34B /* Headers */,
-				47899B2B86F0749C7805D4CF4EC6EDA3 /* Sources */,
-				09FD6CDCCBE0AD3D502F5EA05CF30951 /* Frameworks */,
-				064B0E6F2446A1DA21BD8BF025796337 /* Resources */,
+				DD39DA1546DD4070E8516A8885A9D1FC /* Headers */,
+				D33822AEE5DE2726767BC9A74590A0D9 /* Sources */,
+				767BCB3333F1E9E6A6DEF03A8FF0FB8F /* Frameworks */,
+				13BC87E2041BBCAE916775B635CE78B9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				78624700F167FB55E4E8A90C9E6F8296 /* PBXTargetDependency */,
-				8A7D89809D4C85D68D7E1023857F0EFB /* PBXTargetDependency */,
 			);
 			name = "Pods-SecondHandMarket";
 			productName = Pods_SecondHandMarket;
@@ -384,18 +251,16 @@
 		};
 		A74B3239BF3A371B3F45111D15D14F35 /* Pods-SecondHandMarket-SecondHandMarketUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94D649BC87496DDFDCD6823312284D6A /* Build configuration list for PBXNativeTarget "Pods-SecondHandMarket-SecondHandMarketUITests" */;
+			buildConfigurationList = 34FC7955A0B7F5DD34C78889E7FF33E2 /* Build configuration list for PBXNativeTarget "Pods-SecondHandMarket-SecondHandMarketUITests" */;
 			buildPhases = (
-				0C0B011F70F3E16D6C7ABC421AE62012 /* Headers */,
-				0D029063DEDE147B7CEFD21FFE184AFB /* Sources */,
-				24EC8E02C031CE404BA2EDD70896980C /* Frameworks */,
-				C0C4311A735FB66BC6C6FD5290659D63 /* Resources */,
+				A120388E5F91B916E2D0965CC9A3A45A /* Headers */,
+				0F99DFFB9977532914C24FB7824EB87D /* Sources */,
+				20C85EAC1BC675DFF68E9536B05A5376 /* Frameworks */,
+				3AA66E635D1FC38D7E21E292EEFD2529 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8905637E98F25831D9844F6F15238A0E /* PBXTargetDependency */,
-				1BD51A0C713CB99D5B4427FC74C35EEF /* PBXTargetDependency */,
 			);
 			name = "Pods-SecondHandMarket-SecondHandMarketUITests";
 			productName = Pods_SecondHandMarket_SecondHandMarketUITests;
@@ -408,9 +273,6 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				KnownAssetTags = (
-					New,
-				);
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 			};
@@ -427,8 +289,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				72E614C823EA09AB1AAE80D5CD8A4C58 /* NMapsGeometry */,
-				8E049F5F4E3BDC647F924FEF22D49D90 /* NMapsMap */,
 				5C13849A3C781372F8A4CC16AA6DAA63 /* Pods-SecondHandMarket */,
 				A74B3239BF3A371B3F45111D15D14F35 /* Pods-SecondHandMarket-SecondHandMarketUITests */,
 				4C473ED15856FD76D3B061EA637B15D9 /* Pods-SecondHandMarketTests */,
@@ -437,7 +297,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		064B0E6F2446A1DA21BD8BF025796337 /* Resources */ = {
+		13BC87E2041BBCAE916775B635CE78B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AA66E635D1FC38D7E21E292EEFD2529 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -451,66 +318,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C0C4311A735FB66BC6C6FD5290659D63 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		06DEA16D4139F67FC0E17642FDBEECD0 /* [CP] Copy XCFrameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/NMapsGeometry/NMapsGeometry-xcframeworks-input-files.xcfilelist",
-			);
-			name = "[CP] Copy XCFrameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/NMapsGeometry/NMapsGeometry-xcframeworks-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/NMapsGeometry/NMapsGeometry-xcframeworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B521269790554904B95202DE2D5AC59C /* [CP] Copy XCFrameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/NMapsMap/NMapsMap-xcframeworks-input-files.xcfilelist",
-			);
-			name = "[CP] Copy XCFrameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/NMapsMap/NMapsMap-xcframeworks-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/NMapsMap/NMapsMap-xcframeworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		0D029063DEDE147B7CEFD21FFE184AFB /* Sources */ = {
+		0F99DFFB9977532914C24FB7824EB87D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40DA9C18CB10171C26D0E7795E57AE92 /* Pods-SecondHandMarket-SecondHandMarketUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		47899B2B86F0749C7805D4CF4EC6EDA3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C84FADF3698094F9CFC537720A3F3498 /* Pods-SecondHandMarket-dummy.m in Sources */,
+				7E57B56C4A9190DD81D5709A5FD8B477 /* Pods-SecondHandMarket-SecondHandMarketUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,45 +337,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D33822AEE5DE2726767BC9A74590A0D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B82A163AB36C5C180AD258F51D2DBC38 /* Pods-SecondHandMarket-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1BD51A0C713CB99D5B4427FC74C35EEF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NMapsMap;
-			target = 8E049F5F4E3BDC647F924FEF22D49D90 /* NMapsMap */;
-			targetProxy = A77142BA60AF62E8D3AE7139650E6D7B /* PBXContainerItemProxy */;
-		};
-		78624700F167FB55E4E8A90C9E6F8296 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NMapsGeometry;
-			target = 72E614C823EA09AB1AAE80D5CD8A4C58 /* NMapsGeometry */;
-			targetProxy = F1A040D7510028E47D2B68DA7355B031 /* PBXContainerItemProxy */;
-		};
-		8236C72991E4FAF0AAB570D74E7E8B21 /* PBXTargetDependency */ = {
+		C8FDB0B518556E84F5399710E9BA834F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-SecondHandMarket";
 			target = 5C13849A3C781372F8A4CC16AA6DAA63 /* Pods-SecondHandMarket */;
-			targetProxy = EEBCE93C1A9019CBD14A1CFCB3E6DB05 /* PBXContainerItemProxy */;
-		};
-		8905637E98F25831D9844F6F15238A0E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NMapsGeometry;
-			target = 72E614C823EA09AB1AAE80D5CD8A4C58 /* NMapsGeometry */;
-			targetProxy = E4F70F82F1910BE5CDA7B508D3A9A326 /* PBXContainerItemProxy */;
-		};
-		8A7D89809D4C85D68D7E1023857F0EFB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NMapsMap;
-			target = 8E049F5F4E3BDC647F924FEF22D49D90 /* NMapsMap */;
-			targetProxy = D1C8B980ED0E8095B23972488F8554EB /* PBXContainerItemProxy */;
+			targetProxy = D8EE0F420E3360AD901B2A722D0BA6E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0178BCE568EF60F44FA65B26C53DB8DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6765B54AEAE5BDBABCBB1BBA32BCEEA4 /* Pods-SecondHandMarketTests.debug.xcconfig */;
+			baseConfigurationReference = 557B4A5619FDD0DB0BF1D2FA87A5B429 /* Pods-SecondHandMarketTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -657,9 +456,9 @@
 			};
 			name = Release;
 		};
-		1375405CBF7AA48DD4C520AC6969EFC6 /* Release */ = {
+		0F96D024CBA0DD46D2EACA70AE0DBB8D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E486E30765C8751DD51CA390C44D25E4 /* Pods-SecondHandMarket-SecondHandMarketUITests.release.xcconfig */;
+			baseConfigurationReference = BCFB87A4A925DC269611B2A3468ED540 /* Pods-SecondHandMarket.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -671,7 +470,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SecondHandMarket-SecondHandMarketUITests/Pods-SecondHandMarket-SecondHandMarketUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-SecondHandMarket/Pods-SecondHandMarket-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -680,78 +479,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SecondHandMarket-SecondHandMarketUITests/Pods-SecondHandMarket-SecondHandMarketUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		138EE7F5840AEF4E4028CA5FAAE9EE6E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F89040B8DC7FC773592AA5FE110E9DF /* NMapsGeometry.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		4122D12474652D4B94029A59C0DC6010 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A326C79B1B897CBCFDC36BFF5174A43 /* NMapsGeometry.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		44920A03E8B616013EBD8071F3C9B74B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C3C3EDF7380B2EAA3B43DBC6152E0C3 /* Pods-SecondHandMarket-SecondHandMarketUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SecondHandMarket-SecondHandMarketUITests/Pods-SecondHandMarket-SecondHandMarketUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SecondHandMarket-SecondHandMarketUITests/Pods-SecondHandMarket-SecondHandMarketUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-SecondHandMarket/Pods-SecondHandMarket.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -831,9 +559,47 @@
 			};
 			name = Debug;
 		};
-		B252A4376DB9B50485B22B44680C606B /* Debug */ = {
+		A4A3A2DFDB9B6772AFBF8B879EC6294C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6AD169FE1DEA9A7E9B9A66003AEA30C /* Pods-SecondHandMarket.debug.xcconfig */;
+			baseConfigurationReference = 196319276F8B85355F8AC2EBF1D7FD97 /* Pods-SecondHandMarket-SecondHandMarketUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SecondHandMarket-SecondHandMarketUITests/Pods-SecondHandMarket-SecondHandMarketUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SecondHandMarket-SecondHandMarketUITests/Pods-SecondHandMarket-SecondHandMarketUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AC348D876069A1FE033D113AAF7A2675 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B87E060E642331BFEC1FEA1AB03E2435 /* Pods-SecondHandMarket.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -863,14 +629,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		BF6E7671C2DC2FC82C77ABEA2C194B7A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6678B7B84DCB1A5CF42CEC210C7F3617 /* Pods-SecondHandMarketTests.release.xcconfig */;
+			baseConfigurationReference = A84745C80F6126F18AF7268E990FE0DA /* Pods-SecondHandMarketTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -906,25 +673,9 @@
 			};
 			name = Release;
 		};
-		E683018BA3CA2E27A39E5DF5619B90F6 /* Debug */ = {
+		C083324CB559BA52D7F50503BB11EA44 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0970046F7060534BA9B286629593DA0C /* NMapsMap.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		F74A4A7ABDD8D6036F2881E879F67078 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75F7734599CD1A0DE3C607CCB3ABBE77 /* Pods-SecondHandMarket.release.xcconfig */;
+			baseConfigurationReference = 7A2C6237C10AA909910E1AA7AF15239D /* Pods-SecondHandMarket-SecondHandMarketUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -936,7 +687,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SecondHandMarket/Pods-SecondHandMarket-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-SecondHandMarket-SecondHandMarketUITests/Pods-SecondHandMarket-SecondHandMarketUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -945,7 +696,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SecondHandMarket/Pods-SecondHandMarket.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-SecondHandMarket-SecondHandMarketUITests/Pods-SecondHandMarket-SecondHandMarketUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -954,46 +705,28 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		FE5D137BA104CCBECE001BF38C0AEB3E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53BB18D8DE6118DEC0AAC01027DBECA8 /* NMapsMap.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		055C8A3AFCFC15DD065E17F26187D11E /* Build configuration list for PBXNativeTarget "Pods-SecondHandMarket" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B252A4376DB9B50485B22B44680C606B /* Debug */,
-				F74A4A7ABDD8D6036F2881E879F67078 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		24077503B845F6A8B383CA0FAAC672EE /* Build configuration list for PBXNativeTarget "Pods-SecondHandMarketTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0178BCE568EF60F44FA65B26C53DB8DC /* Debug */,
 				BF6E7671C2DC2FC82C77ABEA2C194B7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34FC7955A0B7F5DD34C78889E7FF33E2 /* Build configuration list for PBXNativeTarget "Pods-SecondHandMarket-SecondHandMarketUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C083324CB559BA52D7F50503BB11EA44 /* Debug */,
+				A4A3A2DFDB9B6772AFBF8B879EC6294C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1007,29 +740,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		73E737D5F21341C24A13EBC70CD8D471 /* Build configuration list for PBXAggregateTarget "NMapsMap" */ = {
+		C77C1019B24EB0EDBDD2AC9D7B64EECC /* Build configuration list for PBXNativeTarget "Pods-SecondHandMarket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E683018BA3CA2E27A39E5DF5619B90F6 /* Debug */,
-				FE5D137BA104CCBECE001BF38C0AEB3E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		94D649BC87496DDFDCD6823312284D6A /* Build configuration list for PBXNativeTarget "Pods-SecondHandMarket-SecondHandMarketUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				44920A03E8B616013EBD8071F3C9B74B /* Debug */,
-				1375405CBF7AA48DD4C520AC6969EFC6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EB98AD101AB530610FAEE48FABDF7F57 /* Build configuration list for PBXAggregateTarget "NMapsGeometry" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4122D12474652D4B94029A59C0DC6010 /* Debug */,
-				138EE7F5840AEF4E4028CA5FAAE9EE6E /* Release */,
+				0F96D024CBA0DD46D2EACA70AE0DBB8D /* Debug */,
+				AC348D876069A1FE033D113AAF7A2675 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
